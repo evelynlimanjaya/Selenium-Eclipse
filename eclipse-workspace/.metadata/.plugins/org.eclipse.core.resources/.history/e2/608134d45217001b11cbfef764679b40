@@ -34,13 +34,6 @@ public class seriousEats {
 
 		
 		searchResult.click();
-		actualSearch=driver.getTitle();
-		
-		if(actualSearch.contains(expectedSearch)) {
-			System.out.print("Test Passed");
-		}else {
-			System.out.print("Test Failed");
-		}
 		Thread.sleep(10000);
 		
 		driver.close();

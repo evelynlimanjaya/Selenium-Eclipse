@@ -36,10 +36,10 @@ public class seriousEats {
 		searchResult.click();
 		actualSearch=driver.getTitle();
 		
-		if(actualSearch.contains(expectedSearch)) {
+		if(actualSearch.contentEquals(expectedSearch)) {
 			System.out.print("Test Passed");
 		}else {
-			System.out.print("Test Failed");
+			System.out.print("TestFailed");
 		}
 		Thread.sleep(10000);
 		

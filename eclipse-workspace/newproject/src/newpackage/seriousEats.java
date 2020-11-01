@@ -25,7 +25,7 @@ public class seriousEats {
 		WebElement searchInput=driver.findElement(By.id("search-box"));
 		
 		searchIcon.click();
-		searchInput.sendKeys("Chinese Herbal Silkie Chicken Soup Recipe");
+		searchInput.sendKeys(expectedSearch);
 		searchInput.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 		

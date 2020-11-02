@@ -12,7 +12,7 @@ public class FirstTestNGFile {
   @Test
   public void verifyHomepageTitle() {
        
-      System.out.println("launching firefox browser"); 
+      System.out.println("launching chrome browser"); 
 //      System.setProperty("webdriver.gecko.driver", driverPath);
       driver = new ChromeDriver();
       driver.get(baseUrl);

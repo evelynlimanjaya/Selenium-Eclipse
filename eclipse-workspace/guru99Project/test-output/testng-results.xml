@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-03T23:16:28 PST" name="Default suite" finished-at="2020-11-03T23:16:42 PST" duration-ms="14018">
+    <groups>
+    </groups>
+    <test started-at="2020-11-03T23:16:28 PST" name="Default test" finished-at="2020-11-03T23:16:42 PST" duration-ms="14018">
+      <class name="guru99Package.day2">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day2@2fd6b6c7]" started-at="2020-11-03T23:16:28 PST" name="launchBrowser" finished-at="2020-11-03T23:16:36 PST" duration-ms="7717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginTest()[pri:0, instance:guru99Package.day2@2fd6b6c7]" started-at="2020-11-03T23:16:36 PST" name="loginTest" finished-at="2020-11-03T23:16:40 PST" duration-ms="4427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day2@2fd6b6c7]" started-at="2020-11-03T23:16:40 PST" name="terminateBrowser" finished-at="2020-11-03T23:16:42 PST" duration-ms="1842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- guru99Package.day2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -2,20 +2,21 @@ package guru99Package;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 //comment the above line and uncomment below line to use Chrome
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class guru99Bank {
 	public static void main(String[] args) {
+		
 		// declaration and instantiation of objects/variables
-//    	System.setProperty("webdriver.gecko.driver","C:\\WebDriver\\geckodriver\\geckodriver.exe");
-//		WebDriver driver = new FirefoxDriver();
+    	System.setProperty("webdriver.gecko.driver","C:\\WebDriver\\geckodriver\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
 		//comment the above 2 lines and uncomment below 2 lines to use Chrome
 //		System.setProperty("webdriver.chrome.driver","C:\\WebDriver\\bin\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+//		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait=new WebDriverWait(driver,5);
 		
 		String baseUrl = "http://www.demo.guru99.com/V4/";

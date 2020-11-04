@@ -1,6 +1,5 @@
 INDEX VERSION 1.131+C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
 3228607656.index
-3941482760.index
 1289320443.index
 3568539966.index
 2991635932.index
@@ -9,9 +8,6 @@ INDEX VERSION 1.131+C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\.metadata\.
 3910905115.index
 909396485.index
 3516833293.index
-1129776198.index
-138770706.index
 3900377511.index
 338618503.index
 4281218338.index
-1512714454.index

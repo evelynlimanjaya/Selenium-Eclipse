@@ -39,7 +39,7 @@ public class day2expert {
 	 * profile to fall back to (your personal data still safe).
 	 */
 		FirefoxProfile firefoxProfile = new FirefoxProfile();
-		driver = new FirefoxDriver(ffBinary, firefoxProfile);
+		driver = new FirefoxDriver();
 
 	// Setting Base URL of website Guru99
 	baseUrl = util.BASE_URL;

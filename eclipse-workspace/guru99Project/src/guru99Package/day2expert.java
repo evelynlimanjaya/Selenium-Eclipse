@@ -4,7 +4,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 
 public class day2expert {
 	static WebDriver driver; // Selenium control driver
@@ -38,8 +40,12 @@ public class day2expert {
 	 * something wrong happens with the testing, you still have your DEFAULT
 	 * profile to fall back to (your personal data still safe).
 	 */
-		FirefoxProfile firefoxProfile = new FirefoxProfile();
-		driver = new FirefoxDriver();
+	  ProfilesIni profile = new ProfilesIni();
+	  FirefoxProfile myProfile = profile.getProfile("testProfile");
+	  FirefoxOptions opt = new FirefoxOptions();
+	  opt.setProfile(myProfile);
+	  opt.setBinary(ffBinary);
+	  driver = new FirefoxDriver(opt);
 
 	// Setting Base URL of website Guru99
 	baseUrl = util.BASE_URL;
@@ -49,6 +55,7 @@ public class day2expert {
 		.implicitlyWait(util.WAIT_TIME, TimeUnit.SECONDS);
 	// Go to http://www.demo.guru99.com/V4/
 	driver.get(baseUrl + "/V4/");
+	driver.manage().window().maximize();
     }
 
     /**

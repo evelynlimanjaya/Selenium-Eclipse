@@ -2,7 +2,7 @@ package guru99Package;
 
 public class util {
 	/* You can change the Path of FireFox based on your environment here */
-	public static final String FIREFOX_PATH = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
+	public static final String FIREFOX_PATH = "C:\\Program Files\\Mozilla Firefox\\firefox.exe";
 	
 	// Setting Base URL
 	public static final String BASE_URL = "http://www.demo.guru99.com/";

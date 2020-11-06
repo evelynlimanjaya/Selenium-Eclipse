@@ -5,7 +5,7 @@
     <classes>
       <class name="RTPackage.RTTest">
         <methods>
-          <include name="waitVariable"/>
+          <include name="clickSearchIcon"/>
           <include name="launchBrowser"/>
           <include name="terminateBrowser"/>
           <include name="searchTest"/>

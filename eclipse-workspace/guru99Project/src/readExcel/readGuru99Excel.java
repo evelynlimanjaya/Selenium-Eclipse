@@ -17,9 +17,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class readGuru99Excel {
 	   public void readExcel(String filePath,String fileName,String sheetName) throws IOException{
-		   filePath="C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project";
-		   fileName="guru99Excel.xlsx";
-		   sheetName="Sheet1";
+//		   filePath="C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project";
+//		   fileName="guru99Excel.xlsx";
+//		   sheetName="Sheet1";
 
 		    //Create an object of File class to open xlsx file
 
@@ -94,11 +94,11 @@ public class readGuru99Excel {
 
 		    //Prepare the path of excel file
 
-		    String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO";
+		    String filePath = "C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project";
 
 		    //Call read file method of the class to read data
 
-		    objExcelFile.readExcel(filePath,"ExportExcel.xlsx","ExcelGuru99Demo");
+		    objExcelFile.readExcel(filePath,"guru99Excel.xlsx","Sheet1");
 
 		    }
 }

@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-03T23:19:00 PST" name="Default suite" finished-at="2020-11-03T23:19:15 PST" duration-ms="15281">
+  <suite started-at="2020-11-07T16:18:55 PST" name="Default suite" finished-at="2020-11-07T16:18:56 PST" duration-ms="903">
     <groups>
     </groups>
-    <test started-at="2020-11-03T23:19:00 PST" name="Default test" finished-at="2020-11-03T23:19:15 PST" duration-ms="15281">
-      <class name="guru99Package.day2">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day2@2fd6b6c7]" started-at="2020-11-03T23:19:00 PST" name="launchBrowser" finished-at="2020-11-03T23:19:09 PST" duration-ms="9165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="loginTest()[pri:0, instance:guru99Package.day2@2fd6b6c7]" started-at="2020-11-03T23:19:09 PST" name="loginTest" finished-at="2020-11-03T23:19:12 PST" duration-ms="3275" status="PASS">
+    <test started-at="2020-11-07T16:18:55 PST" name="Default test" finished-at="2020-11-07T16:18:56 PST" duration-ms="903">
+      <class name="guru99Package.day3TestNG">
+        <test-method signature="loginTest()[pri:0, instance:guru99Package.day3TestNG@29176cc1]" started-at="2020-11-07T16:18:55 PST" name="loginTest" finished-at="2020-11-07T16:18:56 PST" duration-ms="844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day2@2fd6b6c7]" started-at="2020-11-03T23:19:12 PST" name="terminateBrowser" finished-at="2020-11-03T23:19:15 PST" duration-ms="2797" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminateBrowser -->
-      </class> <!-- guru99Package.day2 -->
+      </class> <!-- guru99Package.day3TestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -16,10 +16,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class readGuru99Excel {
-	   public void readExcel(String filePath,String fileName,String sheetName) throws IOException{
-//		   filePath="C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project";
-//		   fileName="guru99Excel.xlsx";
-//		   sheetName="Sheet1";
+	   public Sheet readExcel(String filePath,String fileName,String sheetName) throws IOException{
+
 
 		    //Create an object of File class to open xlsx file
 
@@ -61,44 +59,45 @@ public class readGuru99Excel {
 
 		    //Find number of rows in excel file
 
-		    int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
-
-		    //Create a loop over all the rows of excel file to read it
-
-		    for (int i = 0; i < rowCount+1; i++) {
-
-		        Row row = guru99Sheet.getRow(i);
-
-		        //Create a loop to print cell values in a row
-
-		        for (int j = 0; j < row.getLastCellNum(); j++) {
-
-		            //Print Excel data in console
-
-		            System.out.print(row.getCell(j).getStringCellValue()+"|| ");
-
-		        }
-
-		        System.out.println();
-		    } 
+//		    int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
+//
+//		    //Create a loop over all the rows of excel file to read it
+//
+//		    for (int i = 0; i < rowCount+1; i++) {
+//
+//		        Row row = guru99Sheet.getRow(i);
+//
+//		        //Create a loop to print cell values in a row
+//
+//		        for (int j = 0; j < row.getLastCellNum(); j++) {
+//
+//		            //Print Excel data in console
+//
+//		            System.out.print(row.getCell(j).getStringCellValue()+"|| ");
+//
+//		        }
+//
+//		        System.out.println();
+//		    }
+			return guru99Sheet; 
 
 		    }  
 
 		    //Main function is calling readExcel function to read data from excel file
 
-		    public static void main(String...strings) throws IOException{
-
-		    //Create an object of ReadGuru99ExcelFile class
-
-		    readGuru99Excel objExcelFile = new readGuru99Excel();
-
-		    //Prepare the path of excel file
-
-		    String filePath = "C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project";
-
-		    //Call read file method of the class to read data
-
-		    objExcelFile.readExcel(filePath,"guru99Excel.xlsx","Sheet1");
-
-		    }
+//		    public static void main(String...strings) throws IOException{
+//
+//		    //Create an object of ReadGuru99ExcelFile class
+//
+//		    readGuru99Excel objExcelFile = new readGuru99Excel();
+//
+//		    //Prepare the path of excel file
+//
+//		    String filePath = "C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project";
+//
+//		    //Call read file method of the class to read data
+//
+//		    objExcelFile.readExcel(filePath,"guru99Excel.xlsx","Sheet1");
+//
+//		    }
 }

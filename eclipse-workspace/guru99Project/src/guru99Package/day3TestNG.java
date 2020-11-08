@@ -14,28 +14,46 @@ import org.testng.annotations.Test;
 public class day3TestNG {
   @Test
   public void loginTest() throws Exception {
-//	  System.setProperty("webdriver.gecko.driver","C:\\WebDriver\\geckodriver\\geckodriver.exe");
-//		WebDriver driver = new FirefoxDriver();
-//		WebDriverWait wait=new WebDriverWait(driver,5);
-//		
-//		String baseUrl = "http://www.demo.guru99.com/V4/";
-//		
-//		driver.get(baseUrl);
-//		driver.manage().window().maximize();
+	  System.setProperty("webdriver.gecko.driver","C:\\WebDriver\\geckodriver\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		WebDriverWait wait=new WebDriverWait(driver,5);
+		
+		String baseUrl = "http://www.demo.guru99.com/V4/";
+		
+		driver.get(baseUrl);
+		driver.manage().window().maximize();
+		
+		WebElement UserID=driver.findElement(By.cssSelector("[name='uid']"));
+		WebElement Password=driver.findElement(By.cssSelector("[name='password']"));
+		WebElement Login=driver.findElement(By.cssSelector("[name='btnLogin']"));
 		
 		readGuru99Excel file=new readGuru99Excel();
 		
 		Sheet guru99Sheet = file.readExcel(System.getProperty("user.dir"),"guru99Excel.xlsx" , "Sheet1");
 		int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
-		System.out.print(rowCount);
+		for(int i=1;i<4;i++) {
+			Row row = guru99Sheet.getRow(i);
+			UserID.sendKeys(row.getCell(0).getStringCellValue());
+			Password.sendKeys(row.getCell(1).getStringCellValue());
+			Login.click();
+			WebElement titleSelector= driver.findElement(By.cssSelector("marquee[class='heading3']"));
+////		wait.until(ExpectedConditions.visibilityOf(titleSelector));
+		String titleText=titleSelector.getText();
 		
-//		WebElement UserID=driver.findElement(By.cssSelector("[name='uid']"));
-//		WebElement Password=driver.findElement(By.cssSelector("[name='password']"));
-//		WebElement Login=driver.findElement(By.cssSelector("[name='btnLogin']"));
+		if(titleText.equals("Welcome To Manager's Page of Guru99 Bank")) {
+			System.out.print("Test Passed");
+		}
+		else {
+			System.out.print("Test Failed");
+		}
+		
+		}
+		
+//		 System.out.print(row.getCell(0).getStringCellValue()+"|| ");
+		
+
 //		
-//		UserID.sendKeys("mngr293142");
-//		Password.sendKeys("Egugyje");
-//		Login.click();
+
 //		
 //		WebElement titleSelector= driver.findElement(By.cssSelector("marquee[class='heading3']"));
 ////		wait.until(ExpectedConditions.visibilityOf(titleSelector));
@@ -48,7 +66,7 @@ public class day3TestNG {
 //			System.out.print("Test Failed");
 //		}
 		
-//		driver.close();
+		driver.close();
 	  
   }
 }

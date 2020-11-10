@@ -14,8 +14,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -28,4 +26,8 @@
     <fullyQualifiedTypeName name="readExcel.readGuru99Excel"/>
     <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Sheet"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.NoAlertPresentException"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 </qualifiedTypeNameHistroy>

@@ -15,13 +15,23 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import readExcel.readGuru99Excel;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class day3TestNG {
+import org.testng.annotations.Test;
+
+public class day5TestNG {
 	public String baseUrl = "http://www.demo.guru99.com/V4/";
 	public WebDriver driver;
 	public WebDriverWait wait;
+	
+	@DataProvider (name="loginProvider")
+	public Object[][]getDataFromDataProvider(){
+		
+	}
+	
 	@BeforeTest
 	public void launchBrowser() {
 		System.setProperty("webdriver.gecko.driver","C:\\WebDriver\\geckodriver\\geckodriver.exe");
@@ -38,6 +48,12 @@ public class day3TestNG {
 		driver.manage().window().maximize();
 
 	}
+	
+	@BeforeMethod
+	public void validateWelcomeMessage() {
+		
+	}
+	
 	@Test
 	public void loginTest() throws Exception {		
 		String actualBoxTitle;

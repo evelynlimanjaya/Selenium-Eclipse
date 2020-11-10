@@ -2,19 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-08T22:16:25 PST" name="Default suite" finished-at="2020-11-08T22:16:52 PST" duration-ms="27583">
+  <suite started-at="2020-11-08T22:26:30 PST" name="Default suite" finished-at="2020-11-08T22:26:53 PST" duration-ms="23331">
     <groups>
     </groups>
-    <test started-at="2020-11-08T22:16:25 PST" name="Default test" finished-at="2020-11-08T22:16:52 PST" duration-ms="27583">
+    <test started-at="2020-11-08T22:26:30 PST" name="Default test" finished-at="2020-11-08T22:26:53 PST" duration-ms="23331">
       <class name="guru99Package.day3TestNG">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day3TestNG@43301423]" started-at="2020-11-08T22:16:25 PST" name="launchBrowser" finished-at="2020-11-08T22:16:33 PST" duration-ms="8717" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day3TestNG@1a04f701]" started-at="2020-11-08T22:26:30 PST" name="launchBrowser" finished-at="2020-11-08T22:26:39 PST" duration-ms="9263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginTest()[pri:0, instance:guru99Package.day3TestNG@43301423]" started-at="2020-11-08T22:16:33 PST" name="loginTest" finished-at="2020-11-08T22:16:52 PST" duration-ms="18822" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:guru99Package.day3TestNG@1a04f701]" started-at="2020-11-08T22:26:39 PST" name="loginTest" finished-at="2020-11-08T22:26:52 PST" duration-ms="12844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day3TestNG@1a04f701]" started-at="2020-11-08T22:26:52 PST" name="terminateBrowser" finished-at="2020-11-08T22:26:53 PST" duration-ms="1161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
       </class> <!-- guru99Package.day3TestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

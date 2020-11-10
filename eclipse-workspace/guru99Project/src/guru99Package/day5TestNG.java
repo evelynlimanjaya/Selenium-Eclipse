@@ -27,10 +27,10 @@ public class day5TestNG {
 	public WebDriver driver;
 	public WebDriverWait wait;
 	
-	@DataProvider (name="loginProvider")
-	public Object[][]getDataFromDataProvider(){
-		
-	}
+//	@DataProvider (name="loginProvider")
+//	public Object[][]getDataFromDataProvider(){
+//		
+//	}
 	
 	@BeforeTest
 	public void launchBrowser() {
@@ -49,15 +49,12 @@ public class day5TestNG {
 
 	}
 	
-	@BeforeMethod
-	public void validateWelcomeMessage() {
-		
-	}
+
 	
 	@Test
 	public void loginTest() throws Exception {		
 		String actualBoxTitle;
-		String titleText;
+		String welcomeText;
 		
 		readGuru99Excel file=new readGuru99Excel();
 		
@@ -86,16 +83,17 @@ public class day5TestNG {
 				}
 			}    
 		    catch (NoAlertPresentException Ex){ 
-				WebElement titleSelector= driver.findElement(By.cssSelector("marquee[class='heading3']"));
+		    	WebElement welcomeMsg=driver.findElement(By.cssSelector("tr[class='heading3']"));
 //				wait.until(ExpectedConditions.visibilityOf(titleSelector));
-				titleText=titleSelector.getText();
+				welcomeText=welcomeMsg.getText();
+				System.out.println(welcomeText);
 				// On Successful login compare Actual Page Title with Expected Title		
-			if(titleText.equals("Welcome To Manager's Page of Guru99 Bank")) {
-			    System.out.println("Test case SS[" + i + "]: Passed");
-			} 
-			else {
-			    System.out.println("Test case SS[" + i + "]: Failed");
-			}
+				if(welcomeText.equals("Manger Id : mngr293142")) {
+					System.out.println("Test Case: Passed");
+				}
+				else {
+					System.out.println("Test Case: Failed");
+				}
 		    }
 			driver.navigate().back();
 

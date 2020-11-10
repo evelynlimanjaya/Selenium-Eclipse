@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-08T22:26:30 PST" name="Default suite" finished-at="2020-11-08T22:26:53 PST" duration-ms="23331">
+  <suite started-at="2020-11-09T22:39:44 PST" name="Default suite" finished-at="2020-11-09T22:40:03 PST" duration-ms="18897">
     <groups>
     </groups>
-    <test started-at="2020-11-08T22:26:30 PST" name="Default test" finished-at="2020-11-08T22:26:53 PST" duration-ms="23331">
-      <class name="guru99Package.day3TestNG">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day3TestNG@1a04f701]" started-at="2020-11-08T22:26:30 PST" name="launchBrowser" finished-at="2020-11-08T22:26:39 PST" duration-ms="9263" status="PASS">
+    <test started-at="2020-11-09T22:39:44 PST" name="Default test" finished-at="2020-11-09T22:40:03 PST" duration-ms="18897">
+      <class name="guru99Package.day5TestNG">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day5TestNG@1a04f701]" started-at="2020-11-09T22:39:44 PST" name="launchBrowser" finished-at="2020-11-09T22:39:52 PST" duration-ms="7942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginTest()[pri:0, instance:guru99Package.day3TestNG@1a04f701]" started-at="2020-11-08T22:26:39 PST" name="loginTest" finished-at="2020-11-08T22:26:52 PST" duration-ms="12844" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:guru99Package.day5TestNG@1a04f701]" started-at="2020-11-09T22:39:52 PST" name="loginTest" finished-at="2020-11-09T22:40:02 PST" duration-ms="9743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day3TestNG@1a04f701]" started-at="2020-11-08T22:26:52 PST" name="terminateBrowser" finished-at="2020-11-08T22:26:53 PST" duration-ms="1161" status="PASS">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day5TestNG@1a04f701]" started-at="2020-11-09T22:40:02 PST" name="terminateBrowser" finished-at="2020-11-09T22:40:03 PST" duration-ms="1151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-      </class> <!-- guru99Package.day3TestNG -->
+      </class> <!-- guru99Package.day5TestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

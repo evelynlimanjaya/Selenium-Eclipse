@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99Package.day3TestNG">
+      <class name="guru99Package.day5TestNG">
         <methods>
+          <include name="validateWelcomeMessage"/>
+          <include name="launchBrowser"/>
+          <include name="terminateBrowser"/>
           <include name="loginTest"/>
         </methods>
-      </class> <!-- guru99Package.day3TestNG -->
+      </class> <!-- guru99Package.day5TestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -73,7 +73,7 @@ public class day5TestNG {
 			try{ 
 			    
 		       	Alert alt = driver.switchTo().alert();
-				actualBoxTitle = alt.getText(); // get content of the Alter Message
+				actualBoxTitle = alt.getText(); // get content of the Alert Message
 				alt.accept();
 				if (actualBoxTitle.contains("User or Password is not valid")) { // Compare Error Text with Expected Error Value
 				    System.out.println("Test case SS[" + i + "]: Passed"); 
@@ -86,8 +86,7 @@ public class day5TestNG {
 		    	WebElement welcomeMsg=driver.findElement(By.cssSelector("tr[class='heading3']"));
 //				wait.until(ExpectedConditions.visibilityOf(titleSelector));
 				welcomeText=welcomeMsg.getText();
-				System.out.println(welcomeText);
-				// On Successful login compare Actual Page Title with Expected Title		
+				// On Successful login compare Actual Welcome Message with Expected Welcome Message		
 				if(welcomeText.equals("Manger Id : mngr293142")) {
 					System.out.println("Test Case: Passed");
 				}

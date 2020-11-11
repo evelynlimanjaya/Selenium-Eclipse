@@ -1,5 +1,8 @@
 package guru99Package;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -78,12 +81,13 @@ public class day5TestNG {
 		       	Alert alt = driver.switchTo().alert();
 				actualBoxTitle = alt.getText(); // get content of the Alert Message
 				alt.accept();
-				if (actualBoxTitle.contains("User or Password is not valid")) { // Compare Error Text with Expected Error Value
-				    System.out.println("Test case: Passed"); 
-				} 
-				else {
-				    System.out.println("Test case: Failed");
-				}
+//				if (actualBoxTitle.contains("User or Password is not valid")) { // Compare Error Text with Expected Error Value
+//				    System.out.println("Test case: Passed"); 
+//				} 
+//				else {
+//				    System.out.println("Test case: Failed");
+//				}
+				assertEquals(actualBoxTitle,"User or Password is not valid");
 			}
 			    
 		    catch (NoAlertPresentException Ex){ 
@@ -94,12 +98,13 @@ public class day5TestNG {
 				String usernameText=textPart[1];
 
 				// On Successful login compare Actual Welcome Message with Expected Welcome Message		
-				if(usernameText.equals(" mngr293142")) {
-					System.out.println("Test Case: Passed");
-				}
-				else {
-					System.out.println("Test Case: Failed");
-				}
+//				if(usernameText.equals(" mngr293142")) {
+//					System.out.println("Test Case: Passed");
+//				}
+//				else {
+//					System.out.println("Test Case: Failed");
+//				}
+				assertTrue(usernameText.equals("mngr293142"));
 		    }
 			driver.navigate().back();
 

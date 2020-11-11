@@ -7,7 +7,7 @@
         <methods>
           <include name="launchBrowser"/>
           <include name="terminateBrowser"/>
-          <include name="loginTest" invocation-numbers="3"/>
+          <include name="loginTest" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- guru99Package.day5TestNG -->
     </classes>

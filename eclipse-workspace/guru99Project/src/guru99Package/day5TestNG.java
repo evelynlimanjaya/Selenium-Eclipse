@@ -27,10 +27,25 @@ public class day5TestNG {
 	public WebDriver driver;
 	public WebDriverWait wait;
 	
-//	@DataProvider (name="loginProvider")
-//	public Object[][]getDataFromDataProvider(){
-//		
-//	}
+	@DataProvider (name="loginProvider")
+	public Object[][]getDataFromDataProvider(){
+		Object[][]data=new Object[4][2];
+		
+		//1st row
+		data[0][0]="mngr293142";
+		data[0][1]="Egugyje";
+		//2nd row
+		data[1][0]="invalidUser";
+		data[1][1]="Egugyje";
+		//3rd row
+		data[2][0]="mngr293142";
+		data [2][1]="invalidPassword";
+		//4th row
+		data[3][0]="invalidUser";
+		data[3][1]="invalidPassword";
+		return data;
+		
+	}
 	
 	@BeforeTest
 	public void launchBrowser() {
@@ -51,23 +66,17 @@ public class day5TestNG {
 	
 
 	
-	@Test
-	public void loginTest() throws Exception {		
+	@Test(dataProvider="loginProvider")
+	public void loginTest(String username, String password) throws Exception {		
 		String actualBoxTitle;
 		String welcomeText;
-		
-		readGuru99Excel file=new readGuru99Excel();
-		
-		Sheet guru99Sheet = file.readExcel(System.getProperty("user.dir"),"guru99Excel.xlsx" , "Sheet1");
-//		int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
-		for(int i=1;i<5;i++) {
+
 			WebElement UserID=driver.findElement(By.cssSelector("[name='uid']"));
 			WebElement Password=driver.findElement(By.cssSelector("[name='password']"));
 			WebElement Login=driver.findElement(By.cssSelector("[name='btnLogin']"));
-			Row row = guru99Sheet.getRow(i);
 
-			UserID.sendKeys(row.getCell(0).getStringCellValue());
-			Password.sendKeys(row.getCell(1).getStringCellValue());
+			UserID.sendKeys(username);
+			Password.sendKeys(password);
 			Login.click();
 			
 			try{ 
@@ -76,15 +85,16 @@ public class day5TestNG {
 				actualBoxTitle = alt.getText(); // get content of the Alert Message
 				alt.accept();
 				if (actualBoxTitle.contains("User or Password is not valid")) { // Compare Error Text with Expected Error Value
-				    System.out.println("Test case SS[" + i + "]: Passed"); 
+				    System.out.println("Test case: Passed"); 
 				} 
 				else {
-				    System.out.println("Test case SS[" + i + "]: Failed");
+				    System.out.println("Test case: Failed");
 				}
-			}    
+			}
+			    
 		    catch (NoAlertPresentException Ex){ 
 		    	WebElement welcomeMsg=driver.findElement(By.cssSelector("tr[class='heading3']"));
-//				wait.until(ExpectedConditions.visibilityOf(titleSelector));
+				wait.until(ExpectedConditions.visibilityOf(welcomeMsg));
 				welcomeText=welcomeMsg.getText();
 				// On Successful login compare Actual Welcome Message with Expected Welcome Message		
 				if(welcomeText.equals("Manger Id : mngr293142")) {
@@ -96,7 +106,7 @@ public class day5TestNG {
 		    }
 			driver.navigate().back();
 
-		}
+		
 		
 
 	  

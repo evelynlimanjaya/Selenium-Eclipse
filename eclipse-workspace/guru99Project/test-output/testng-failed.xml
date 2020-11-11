@@ -5,10 +5,9 @@
     <classes>
       <class name="guru99Package.day5TestNG">
         <methods>
-          <include name="validateWelcomeMessage"/>
           <include name="launchBrowser"/>
           <include name="terminateBrowser"/>
-          <include name="loginTest"/>
+          <include name="loginTest" invocation-numbers="3"/>
         </methods>
       </class> <!-- guru99Package.day5TestNG -->
     </classes>

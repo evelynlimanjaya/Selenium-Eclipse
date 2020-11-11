@@ -90,8 +90,11 @@ public class day5TestNG {
 		    	WebElement welcomeMsg=driver.findElement(By.cssSelector("tr[class='heading3']"));
 				wait.until(ExpectedConditions.visibilityOf(welcomeMsg));
 				welcomeText=welcomeMsg.getText();
+				String[] textPart=welcomeText.split(":");
+				String usernameText=textPart[1];
+
 				// On Successful login compare Actual Welcome Message with Expected Welcome Message		
-				if(welcomeText.equals("Manger Id : mngr293142")) {
+				if(usernameText.equals(" mngr293142")) {
 					System.out.println("Test Case: Passed");
 				}
 				else {

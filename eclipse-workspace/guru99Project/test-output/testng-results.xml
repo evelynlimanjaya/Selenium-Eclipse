@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-10T22:25:13 PST" name="Default suite" finished-at="2020-11-10T22:25:37 PST" duration-ms="23369">
+  <suite started-at="2020-11-10T22:36:01 PST" name="Default suite" finished-at="2020-11-10T22:36:24 PST" duration-ms="22919">
     <groups>
     </groups>
-    <test started-at="2020-11-10T22:25:13 PST" name="Default test" finished-at="2020-11-10T22:25:37 PST" duration-ms="23369">
+    <test started-at="2020-11-10T22:36:01 PST" name="Default test" finished-at="2020-11-10T22:36:24 PST" duration-ms="22919">
       <class name="guru99Package.day5TestNG">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:25:13 PST" name="launchBrowser" finished-at="2020-11-10T22:25:22 PST" duration-ms="8870" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:36:01 PST" name="launchBrowser" finished-at="2020-11-10T22:36:10 PST" duration-ms="8675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:25:22 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:25:26 PST" duration-ms="4378" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:36:10 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:36:16 PST" duration-ms="5632" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:25:26 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:25:30 PST" duration-ms="3086" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:36:16 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:36:17 PST" duration-ms="1822" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:25:30 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:25:32 PST" duration-ms="2287" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:36:17 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:36:20 PST" duration-ms="2780" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:25:32 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:25:34 PST" duration-ms="2313" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:36:20 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-10T22:36:23 PST" duration-ms="2599" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:25:34 PST" name="terminateBrowser" finished-at="2020-11-10T22:25:37 PST" duration-ms="2369" status="PASS">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day5TestNG@51e5fc98]" started-at="2020-11-10T22:36:23 PST" name="terminateBrowser" finished-at="2020-11-10T22:36:24 PST" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->

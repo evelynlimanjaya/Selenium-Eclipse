@@ -113,7 +113,7 @@ public class day6TestNG {
 				// Code to take Screenshot
 				File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 				// Code to save screenshot at desired location
-				FileUtils.copyFile(scrFile, new File("C:\\screenshot.png"));
+				FileUtils.copyFile(scrFile, new File("C:\\Users\\Eien\\Documents\\Selenium Screenshot\\screenshot.png"));
 		    }
 			driver.navigate().back();
 

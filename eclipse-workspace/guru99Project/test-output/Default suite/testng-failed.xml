@@ -6,7 +6,7 @@
       <class name="guru99Package.day6TestNG">
         <methods>
           <include name="terminateBrowser"/>
-          <include name="loginTest" invocation-numbers="0 1 2 3"/>
+          <include name="loginTest"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- guru99Package.day6TestNG -->

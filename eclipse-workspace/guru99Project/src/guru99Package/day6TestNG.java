@@ -22,32 +22,18 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import readExcel.readGuru99Excel;
+
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 
 public class day6TestNG {
 	public String baseUrl = "http://www.demo.guru99.com/V4/";
 	public WebDriver driver;
 	public WebDriverWait wait;
 	
-	@DataProvider (name="loginProvider")
-	public Object[][]getDataFromDataProvider(){
-		Object[][]data=new Object[4][2];
-		
-		//1st row
-		data[0][0]="mngr293142";
-		data[0][1]="Egugyje";
-		//2nd row
-		data[1][0]="invalidUser";
-		data[1][1]="Egugyje";
-		//3rd row
-		data[2][0]="mngr293142";
-		data [2][1]="invalidPassword";
-		//4th row
-		data[3][0]="invalidUser";
-		data[3][1]="invalidPassword";
-		return data;
-		
-	}
 	
 	@BeforeTest
 	public void launchBrowser() {
@@ -68,17 +54,24 @@ public class day6TestNG {
 	
 
 	
-	@Test(dataProvider="loginProvider")
-	public void loginTest(String username, String password) throws Exception {		
+	@Test
+	public void loginTest() throws Exception {		
 		String actualBoxTitle;
 		String welcomeText;
+		
+		readGuru99Excel file=new readGuru99Excel();
+		
+		Sheet guru99Sheet = file.readExcel(System.getProperty("user.dir"),"guru99Excel.xlsx" , "Sheet1");
+//		int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
+		for(int i=1;i<5;i++) {
 
 			WebElement UserID=driver.findElement(By.cssSelector("[name='uid']"));
 			WebElement Password=driver.findElement(By.cssSelector("[name='password']"));
 			WebElement Login=driver.findElement(By.cssSelector("[name='btnLogin']"));
+			Row row = guru99Sheet.getRow(i);
 
-			UserID.sendKeys(username);
-			Password.sendKeys(password);
+			UserID.sendKeys(row.getCell(0).getStringCellValue());
+			Password.sendKeys(row.getCell(1).getStringCellValue());
 			Login.click();
 			
 			try{ 
@@ -116,6 +109,8 @@ public class day6TestNG {
 				FileUtils.copyFile(scrFile, new File("C:\\Users\\Eien\\Documents\\Selenium Screenshot\\screenshot.png"));
 		    }
 			driver.navigate().back();
+		}
+		
 
 		
 		

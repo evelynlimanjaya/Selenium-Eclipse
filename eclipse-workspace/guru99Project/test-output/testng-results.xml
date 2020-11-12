@@ -1,81 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-11T22:48:55 PST" name="Default suite" finished-at="2020-11-11T22:49:24 PST" duration-ms="28513">
+  <suite started-at="2020-11-11T22:59:41 PST" name="Default suite" finished-at="2020-11-11T23:00:31 PST" duration-ms="49978">
     <groups>
     </groups>
-    <test started-at="2020-11-11T22:48:55 PST" name="Default test" finished-at="2020-11-11T22:49:24 PST" duration-ms="28513">
+    <test started-at="2020-11-11T22:59:41 PST" name="Default test" finished-at="2020-11-11T23:00:31 PST" duration-ms="49978">
       <class name="guru99Package.day6TestNG">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day6TestNG@161479c6]" started-at="2020-11-11T22:48:55 PST" name="launchBrowser" finished-at="2020-11-11T22:49:06 PST" duration-ms="11075" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:guru99Package.day6TestNG@71b1176b]" started-at="2020-11-11T22:59:41 PST" name="launchBrowser" finished-at="2020-11-11T22:59:49 PST" duration-ms="8348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day6TestNG@161479c6]" started-at="2020-11-11T22:49:06 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-11T22:49:13 PST" duration-ms="7015" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr293142]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Egugyje]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginTest()[pri:0, instance:guru99Package.day6TestNG@71b1176b]" started-at="2020-11-11T22:59:49 PST" name="loginTest" finished-at="2020-11-11T23:00:30 PST" duration-ms="40436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day6TestNG@161479c6]" started-at="2020-11-11T22:49:13 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-11T22:49:16 PST" duration-ms="2267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalidUser]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Egugyje]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day6TestNG@161479c6]" started-at="2020-11-11T22:49:16 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-11T22:49:18 PST" duration-ms="2307" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr293142]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalidPassword]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:guru99Package.day6TestNG@161479c6]" started-at="2020-11-11T22:49:18 PST" name="loginTest" data-provider="loginProvider" finished-at="2020-11-11T22:49:20 PST" duration-ms="2574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalidUser]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalidPassword]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day6TestNG@161479c6]" started-at="2020-11-11T22:49:20 PST" name="terminateBrowser" finished-at="2020-11-11T22:49:24 PST" duration-ms="3171" status="PASS">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:guru99Package.day6TestNG@71b1176b]" started-at="2020-11-11T23:00:30 PST" name="terminateBrowser" finished-at="2020-11-11T23:00:31 PST" duration-ms="1105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->

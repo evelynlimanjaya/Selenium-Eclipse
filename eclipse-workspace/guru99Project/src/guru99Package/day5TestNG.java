@@ -104,7 +104,7 @@ public class day5TestNG {
 //				else {
 //					System.out.println("Test Case: Failed");
 //				}
-				assertTrue(usernameText.equals("mngr293142"));
+				assertTrue(usernameText.equals(" mngr293142"));
 		    }
 			driver.navigate().back();
 

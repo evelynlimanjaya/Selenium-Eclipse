@@ -12,7 +12,7 @@ import utility.Constants;
 
 public class ReadExcelSheet 
 { 
-public ArrayList<String> readExcelData(int colNo) throws IOException 
+public ArrayList readExcelData(int colNo) throws IOException 
 { 
 String filePath = Constants.filePath; 
 File file = new File(filePath); 
@@ -21,9 +21,9 @@ FileInputStream fis = new FileInputStream(file);
 XSSFWorkbook wb = new XSSFWorkbook(fis); 
 XSSFSheet sheet = wb.getSheet("Sheet1"); 
 
-Iterator<Row> row = sheet.rowIterator(); 
+Iterator row = sheet.rowIterator(); 
 row.next(); 
-ArrayList<String> a = new ArrayList<String>(); 
+ArrayList<String> a = new ArrayList(); 
 // Checking the next element availability using the reference variable row. 
 while(row.hasNext()) 
 { 
@@ -36,9 +36,8 @@ a.add(data);
 a.add(((Row) row.next()).getCell(colNo).getStringCellValue()); 
 } 
 System.out.println("List: " +a);
-// Return the data to the Arraylist method.
-wb.close();
-return a;
+// Return the data to the Arraylist method. 
+return a; 
 }
 
 public void DemoFile(int i) {

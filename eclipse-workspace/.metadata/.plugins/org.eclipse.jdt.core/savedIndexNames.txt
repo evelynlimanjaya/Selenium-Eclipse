@@ -21,7 +21,6 @@ INDEX VERSION 1.131+C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\.metadata\.
 137873018.index
 724203968.index
 3568539966.index
-3228607656.index
 2449944821.index
 3669425331.index
 2420225445.index

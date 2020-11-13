@@ -10,7 +10,7 @@ public class readObject {
     public Properties getObjectRepository() throws IOException{
         //Read object repository file
         InputStream stream = new FileInputStream(new File("C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\guru99Project\\src\\objects\\object.properties"));
-        //load all objects
+        //lcd seload all objects
         p.load(stream);
          return p;
     }

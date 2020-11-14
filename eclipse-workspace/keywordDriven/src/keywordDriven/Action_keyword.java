@@ -5,22 +5,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utility.Constants; 
 public class Action_keyword {
-	public static WebDriver driver; 
+	public static WebDriver driver= new ChromeDriver(); 
+
 	public void openBrowser() 
 	{
 
 //	System.setProperty("webdriver.chrome.driver","D:\\Selenium\\chromedriver.exe"); 
-	WebDriver driver = new ChromeDriver(); 
+	driver.get(Constants.URL);
 	driver.manage().window().maximize(); 
 	} 
 	public void navigate() 
 	{ 
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
-	driver.get(Constants.URL); 
+ 
 	} 
 	public void enterEmail() 
 	{ 
-	driver.findElement(By.xpath("//input[@id='user_email_login']")).sendKeys(Constants.username); 
+	driver.findElement(By.xpath("//input[@id='user_email_login']")).sendKeys(Constants.username);
 	} 
 	public void enterPassword() 
 	{ 

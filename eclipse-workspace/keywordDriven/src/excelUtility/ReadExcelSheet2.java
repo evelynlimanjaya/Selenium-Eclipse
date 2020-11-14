@@ -28,7 +28,7 @@ public class ReadExcelSheet2
 
 		    FileInputStream inputStream = new FileInputStream(file);
 
-		    Workbook Workbook = null;
+		    Workbook testWorkbook = null;
 
 		    //Find the file extension by splitting file name in substring  and getting only extension name
 
@@ -40,7 +40,7 @@ public class ReadExcelSheet2
 
 		    //If it is xlsx file then create object of XSSFWorkbook class
 
-		    Workbook = new XSSFWorkbook(inputStream);
+		    testWorkbook = new XSSFWorkbook(inputStream);
 
 		    }
 
@@ -50,23 +50,23 @@ public class ReadExcelSheet2
 
 		        //If it is xls file then create object of HSSFWorkbook class
 
-		        Workbook = new HSSFWorkbook(inputStream);
+		        testWorkbook = new HSSFWorkbook(inputStream);
 
 		    }
 
 		    //Read sheet inside the workbook by its name
 
-		    Sheet Sheet = Workbook.getSheet(sheetName);
+		    Sheet testSheet = testWorkbook.getSheet(sheetName);
 
 		    //Find number of rows in excel file
 
-//		    int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
+//		    int rowCount = testSheet.getLastRowNum()-testSheet.getFirstRowNum();
 ////
 ////		    //Create a loop over all the rows of excel file to read it
 //
 //		    for (int i = 0; i < rowCount+1; i++) {
 //
-//		        Row row = guru99Sheet.getRow(i);
+//		        Row row = testSheet.getRow(i);
 //
 //		        //Create a loop to print cell values in a row
 //
@@ -80,25 +80,25 @@ public class ReadExcelSheet2
 //
 //		        System.out.println();
 //		    }
-			return Sheet; 
+			return testSheet; 
 
 		    }  
 
-		    //Main function is calling readExcel function to read data from excel file
-
-		    public static void main(String...strings) throws IOException{
+//		    //Main function is calling readExcel function to read data from excel file
 //
-		    //Create an object of ReadGuru99ExcelFile class
-
-		    ReadExcelSheet2 objExcelFile = new ReadExcelSheet2();
-
-		    //Prepare the path of excel file
-
-		    String filePath = "C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\keywordDriven\\src\\excelData";
-
-		    //Call read file method of the class to read data
-
-		    objExcelFile.readExcel(filePath,"DemoFile.xlsx","Sheet1");
-
-		    }
+//		    public static void main(String...strings) throws IOException{
+////
+//		    //Create an object of ReadGuru99ExcelFile class
+//
+//		    ReadExcelSheet objExcelFile = new ReadExcelSheet();
+//
+//		    //Prepare the path of excel file
+//
+//		    String filePath = "C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\keywordDriven\\src\\excelData";
+//
+//		    //Call read file method of the class to read data
+//
+//		    objExcelFile.readExcel(filePath,"DemoFile.xlsx","Sheet1");
+//
+//		    }
 }

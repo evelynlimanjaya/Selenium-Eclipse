@@ -60,26 +60,26 @@ public class ReadExcelSheet
 
 		    //Find number of rows in excel file
 
-//		    int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
-////
-////		    //Create a loop over all the rows of excel file to read it
+		    int rowCount = testSheet.getLastRowNum()-testSheet.getFirstRowNum();
 //
-//		    for (int i = 0; i < rowCount+1; i++) {
-//
-//		        Row row = guru99Sheet.getRow(i);
-//
-//		        //Create a loop to print cell values in a row
-//
-//		        for (int j = 0; j < row.getLastCellNum(); j++) {
-//
-//		            //Print Excel data in console
-//
-//		            System.out.print(row.getCell(j).getStringCellValue()+"|| ");
-//
-//		        }
-//
-//		        System.out.println();
-//		    }
+//		    //Create a loop over all the rows of excel file to read it
+
+		    for (int i = 0; i < rowCount+1; i++) {
+
+		        Row row = testSheet.getRow(i);
+
+		        //Create a loop to print cell values in a row
+
+		        for (int j = 0; j < row.getLastCellNum(); j++) {
+
+		            //Print Excel data in console
+
+		            System.out.print(row.getCell(j).getStringCellValue()+"|| ");
+
+		        }
+
+		        System.out.println();
+		    }
 			return testSheet; 
 
 		    }  

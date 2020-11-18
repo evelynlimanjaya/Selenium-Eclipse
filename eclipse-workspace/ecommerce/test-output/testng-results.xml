@@ -1,30 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-17T22:59:42 PST" name="Default suite" finished-at="2020-11-17T22:59:53 PST" duration-ms="11411">
+  <suite started-at="2020-11-17T23:21:45 PST" name="Default suite" finished-at="2020-11-17T23:21:58 PST" duration-ms="13468">
     <groups>
     </groups>
-    <test started-at="2020-11-17T22:59:42 PST" name="Default test" finished-at="2020-11-17T22:59:53 PST" duration-ms="11411">
+    <test started-at="2020-11-17T23:21:45 PST" name="Default test" finished-at="2020-11-17T23:21:58 PST" duration-ms="13468">
       <class name="test.day1Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day1Test@2fd6b6c7]" started-at="2020-11-17T22:59:42 PST" name="launchBrowser" finished-at="2020-11-17T22:59:50 PST" duration-ms="7988" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day1Test@5db250b4]" started-at="2020-11-17T23:21:45 PST" name="launchBrowser" finished-at="2020-11-17T23:21:53 PST" duration-ms="8215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="nameSort()[pri:0, instance:test.day1Test@2fd6b6c7]" started-at="2020-11-17T22:59:50 PST" name="nameSort" finished-at="2020-11-17T22:59:50 PST" duration-ms="26" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="nameSort()[pri:0, instance:test.day1Test@5db250b4]" started-at="2020-11-17T23:21:53 PST" name="nameSort" finished-at="2020-11-17T23:21:55 PST" duration-ms="2093" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [Home pag] but found [Home page]]]>
+              <![CDATA[Unable to locate element: (//*[@title='Sort By'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-SHNH7OFQ', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201027185343, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 9928, moz:profile: C:\Users\Eien\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10d5f424-80a0-4eda-b751-7624117430a8
+*** Element info: {Using=xpath, value=(//*[@title='Sort By'])[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Home pag] but found [Home page]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at test.day1Test.nameSort(day1Test.java:40)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[@title='Sort By'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-SHNH7OFQ', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201027185343, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 9928, moz:profile: C:\Users\Eien\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10d5f424-80a0-4eda-b751-7624117430a8
+*** Element info: {Using=xpath, value=(//*[@title='Sort By'])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at test.day1Test.nameSort(day1Test.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,11 +78,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameSort -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:test.day1Test@2fd6b6c7]" started-at="2020-11-17T22:59:50 PST" name="terminateBrowser" finished-at="2020-11-17T22:59:53 PST" duration-ms="3331" status="PASS">
+        <test-method signature="verifyHomePage()[pri:0, instance:test.day1Test@5db250b4]" started-at="2020-11-17T23:21:55 PST" name="verifyHomePage" finished-at="2020-11-17T23:21:55 PST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method signature="verifyMobilePage()[pri:0, instance:test.day1Test@5db250b4]" started-at="2020-11-17T23:21:55 PST" name="verifyMobilePage" finished-at="2020-11-17T23:21:57 PST" duration-ms="1496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMobilePage -->
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:test.day1Test@5db250b4]" started-at="2020-11-17T23:21:57 PST" name="terminateBrowser" finished-at="2020-11-17T23:21:58 PST" duration-ms="1557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->

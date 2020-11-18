@@ -3,7 +3,9 @@ import utility.constants;
 
 import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -12,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.Select;
 
 public class day1Test {
 	public WebDriver driver;
@@ -35,12 +38,30 @@ public class day1Test {
 	
 	
 	@Test
-	public void nameSort() {
+	public void verifyHomePage() {
 		String pageTitle=driver.getTitle();
-		assertEquals(pageTitle,"Home pag");
+		assertEquals(pageTitle,"Home page");
 	
 	}
 	
+	@Test
+	public void verifyMobilePage() {
+		WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
+		mobileTab.click();
+		String pageTitle=driver.getTitle();
+		assertEquals(pageTitle,"Mobile");
+		
+	}
+	
+	@Test
+	public void nameSort() throws InterruptedException {
+		Thread.sleep(2000);
+		WebElement nameSort=driver.findElement(By.xpath("(//*[@title='Sort By'])[1]"));
+		nameSort.click();
+//		Select drpSort=new Select(driver.findElement(By.xpath("(//*[@title='Sort By'])[1]")));
+//		drpSort.selectByVisibleText("Name");
+		Thread.sleep(2000);
+	}
 	@AfterTest
 	public void terminateBrowser() {
 		driver.quit();

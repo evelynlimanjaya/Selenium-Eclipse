@@ -1,12 +1,15 @@
 package test;
 import utility.constants;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -24,7 +27,8 @@ public class day1Test {
 		driver =  new FirefoxDriver(opt);
 		wait=new WebDriverWait(driver,5);
 		
-
+		driver.get(constants.URL);
+		driver.manage().window().maximize();
 		
 		
 	}
@@ -32,7 +36,13 @@ public class day1Test {
 	
 	@Test
 	public void nameSort() {
-		driver.get(constants.URL);
-		driver.manage().window().maximize();
+		String pageTitle=driver.getTitle();
+		assertEquals(pageTitle,"Home pag");
+	
+	}
+	
+	@AfterTest
+	public void terminateBrowser() {
+		driver.quit();
 	}
 }

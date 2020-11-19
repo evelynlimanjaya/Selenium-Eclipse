@@ -5,8 +5,8 @@
     <classes>
       <class name="test.day1Test">
         <methods>
-          <include name="verifyHomePage"/>
           <include name="terminateBrowser"/>
+          <include name="nameSort"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- test.day1Test -->

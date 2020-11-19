@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.Select;
 public class day1Test {
 	public WebDriver driver;
 	public WebDriverWait wait;
-	 private StringBuffer verificationErrors = new StringBuffer();
+
 	
 	@BeforeTest
 	public void launchBrowser() {
@@ -34,7 +34,7 @@ public class day1Test {
 		driver =  new FirefoxDriver(opt);
 		wait=new WebDriverWait(driver,5);
 		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.get(constants.URL);
 		driver.manage().window().maximize();
@@ -45,12 +45,8 @@ public class day1Test {
 	
 	@Test
 	public void verifyHomePage() {
-//		String pageTitle=driver.getTitle();
-//		assertEquals(pageTitle,"Home page");
-		
-		String demoSite  = driver.findElement(By.cssSelector("h2")).getText();
-	    System.out.println(demoSite);
-	    AssertJUnit.assertEquals("gfhfg", demoSite);	
+		String pageTitle=driver.getTitle();
+		AssertJUnit.assertEquals(pageTitle,"Home page");	
 	
 	}
 	
@@ -59,19 +55,21 @@ public class day1Test {
 		WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
 		mobileTab.click();
 		String pageTitle=driver.getTitle();
-		assertEquals(pageTitle,"Mobile");
+		AssertJUnit.assertEquals(pageTitle,"Mobile");
 		
 	}
 	
-//	@Test
-//	public void nameSort() throws InterruptedException {
-//		Thread.sleep(2000);c
+	@Test
+	public void nameSort() throws InterruptedException {
+		 new Select(driver.findElement(By.cssSelector("select[title=\"Sort By\"]"))).selectByVisibleText("Name");
+		
+//		Thread.sleep(2000);
 //		WebElement nameSort=driver.findElement(By.xpath("(//*[@title='Sort By'])[1]"));
 //		nameSort.click();
 ////		Select drpSort=new Select(driver.findElement(By.xpath("(//*[@title='Sort By'])[1]")));
 ////		drpSort.selectByVisibleText("Name");
 //		Thread.sleep(2000);
-//	}
+	}
 	@AfterTest
 	public void terminateBrowser() {
 		driver.quit();

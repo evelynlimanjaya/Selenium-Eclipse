@@ -17,6 +17,7 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 public class day1Test {
@@ -35,20 +36,20 @@ public class day1Test {
 		wait=new WebDriverWait(driver,5);
 		
 		driver.get(constants.URL);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		
 		
 	}
 	
 	
-	@Test
+	@Test(priority=1)
 	public void verifyHomePage() {
 		String pageTitle=driver.getTitle();
 		AssertJUnit.assertEquals(pageTitle,"Home page");	
 	
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void verifyMobilePage() {
 		WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
 		mobileTab.click();
@@ -57,15 +58,15 @@ public class day1Test {
 		
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void nameSort() throws InterruptedException {
 //		new Select(driver.findElement(By.cssSelector("select[title='Sort By']"))).selectByVisibleText("Name");
 		
-		Thread.sleep(2000);
-		WebElement nameSort=driver.findElement(By.cssSelector("select[title='Sort By']"));
-		nameSort.click();
-//		Select drpSort=new Select(driver.findElement(By.xpath("(//*[@title='Sort By'])[1]")));
-//		drpSort.selectByVisibleText("Name");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@title='Sort By'])[1]")));
+//		WebElement nameSort=driver.findElement(By.xpath("(//*[@title='Sort By'])[1]"));
+//		nameSort.click();
+		Select drpSort=new Select(driver.findElement(By.xpath("(//*[@title='Sort By'])[1]")));
+		drpSort.selectByVisibleText("Name");
 		Thread.sleep(2000);
 	}
 	@AfterTest

@@ -60,11 +60,6 @@ public class day1Test {
 	
 	@Test(priority=3)
 	public void nameSort() throws InterruptedException {
-//		new Select(driver.findElement(By.cssSelector("select[title='Sort By']"))).selectByVisibleText("Name");
-		
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@title='Sort By'])[1]")));
-//		WebElement nameSort=driver.findElement(By.xpath("(//*[@title='Sort By'])[1]"));
-//		nameSort.click();
 		Select drpSort=new Select(driver.findElement(By.xpath("(//*[@title='Sort By'])[1]")));
 		drpSort.selectByVisibleText("Name");
 		Thread.sleep(2000);

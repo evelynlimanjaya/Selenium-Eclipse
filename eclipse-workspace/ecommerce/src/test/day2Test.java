@@ -1,6 +1,8 @@
 package test;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -33,9 +35,12 @@ public class day2Test {
 }
     @Test
     public void comparePrice() {
-    	
+    	WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
+		mobileTab.click();
+		String listPrice=driver.findElement(By.xpath("//*[@id='product-price-1']")).getText();
+		System.out.print(listPrice);
+		
     }
-    
     @AfterTest
 	public void terminateBrowser() {
 		driver.quit();

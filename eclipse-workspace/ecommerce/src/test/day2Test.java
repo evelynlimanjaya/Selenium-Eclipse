@@ -44,9 +44,9 @@ public class day2Test {
 		WebElement xperia=driver.findElement(By.cssSelector("[title='Sony Xperia']"));
 		xperia.click();
 		String detailPrice=driver.findElement(By.cssSelector("span[class='price']")).getText();
-		assertEquals(listPrice,"jkh");
+		AssertJUnit.assertEquals(listPrice,detailPrice);
 //		 try {
-//			 AssertJUnit.assertEquals(listPrice, detailPrice); 
+//			 assertEquals(listPrice, detailPrice); 
 //		      } catch (Exception e) {
 //		    	  e.printStackTrace();
 //		      }

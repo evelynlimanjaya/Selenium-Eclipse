@@ -36,7 +36,7 @@ public class day1Test {
 		wait=new WebDriverWait(driver,5);
 		
 		driver.get(constants.URL);
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 		
 	}

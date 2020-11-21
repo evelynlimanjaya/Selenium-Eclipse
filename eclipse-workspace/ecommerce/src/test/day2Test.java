@@ -1,5 +1,7 @@
 package test;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -38,8 +41,15 @@ public class day2Test {
     	WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
 		mobileTab.click();
 		String listPrice=driver.findElement(By.xpath("//*[@id='product-price-1']")).getText();
-		System.out.print(listPrice);
-		
+		WebElement xperia=driver.findElement(By.cssSelector("[title='Sony Xperia']"));
+		xperia.click();
+		String detailPrice=driver.findElement(By.cssSelector("span[class='price']")).getText();
+		assertEquals(listPrice,"jkh");
+//		 try {
+//			 AssertJUnit.assertEquals(listPrice, detailPrice); 
+//		      } catch (Exception e) {
+//		    	  e.printStackTrace();
+//		      }
     }
     @AfterTest
 	public void terminateBrowser() {

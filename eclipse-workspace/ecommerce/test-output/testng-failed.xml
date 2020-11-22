@@ -6,7 +6,8 @@
       <class name="test.day3Test">
         <methods>
           <include name="launchBrowser"/>
-          <include name="cartTest"/>
+          <include name="terminateBrowser"/>
+          <include name="emptyCart"/>
         </methods>
       </class> <!-- test.day3Test -->
     </classes>

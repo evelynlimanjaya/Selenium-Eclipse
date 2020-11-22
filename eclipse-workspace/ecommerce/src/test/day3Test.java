@@ -41,8 +41,14 @@ public class day3Test {
 		WebElement addToCart=driver.findElement(By.xpath("(//*[@title='Add to Cart'])[1]"));
 		addToCart.click();
 		WebElement qtyInput=driver.findElement(By.cssSelector("[class='input-text qty']"));
+		WebElement update=driver.findElement(By.xpath("(//span[contains(text(),'Update')])[1]"));
 		qtyInput.clear();
 		qtyInput.sendKeys("1000");
-		Thread.sleep(5000);
+		update.click();
+		WebElement errorMsg=driver.findElement(By.cssSelector("[class='item-msg error']"));
+		String errorMsgContent=errorMsg.getText();
+		System.out.print(errorMsgContent);
+		
+		
     }
 }

@@ -35,9 +35,14 @@ public class day3Test {
 	}
 	
     @Test
-    public void cartTest() {
+    public void cartTest() throws InterruptedException {
     	WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
 		mobileTab.click();
-
+		WebElement addToCart=driver.findElement(By.xpath("(//*[@title='Add to Cart'])[1]"));
+		addToCart.click();
+		WebElement qtyInput=driver.findElement(By.cssSelector("[class='input-text qty']"));
+		qtyInput.clear();
+		qtyInput.sendKeys("1000");
+		Thread.sleep(5000);
     }
 }

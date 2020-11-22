@@ -64,7 +64,8 @@ public class day3Test {
     	WebElement cartEmpty=driver.findElement(By.cssSelector("[class='cart-empty']"));
     	String emptyMsg=cartEmpty.getText();
     	try {
-			 assertEquals(emptyMsg, "You have no items in your shopping cart."); 
+			 assertEquals(emptyMsg, "You have no items in your shopping cart.\n"
+			 		+ "Click here to continue shopping."); 
 		      } catch (Exception e) {
 		    	  e.printStackTrace();
 		      }

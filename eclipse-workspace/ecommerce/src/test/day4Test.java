@@ -44,6 +44,9 @@ public class day4Test {
 		iPhoneCompare.click();
 		WebElement galaxyCompare=driver.findElement(By.xpath("(//*[@class='link-compare'])[3]"));
 		galaxyCompare.click();
+		WebElement compareBtn=driver.findElement(By.cssSelector("button[title='Compare']"));
+		compareBtn.click();
+		
 		
 	}
 	

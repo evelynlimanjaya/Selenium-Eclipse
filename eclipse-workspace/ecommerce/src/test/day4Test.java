@@ -38,6 +38,12 @@ public class day4Test {
 	public void compareTest() {
     	WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
 		mobileTab.click();
+		WebElement xperiaCompare=driver.findElement(By.xpath("(//*[@class='link-compare'])[1]"));
+		xperiaCompare.click();
+		WebElement iPhoneCompare=driver.findElement(By.xpath("(//*[@class='link-compare'])[2]"));
+		iPhoneCompare.click();
+		WebElement galaxyCompare=driver.findElement(By.xpath("(//*[@class='link-compare'])[3]"));
+		galaxyCompare.click();
 		
 	}
 	

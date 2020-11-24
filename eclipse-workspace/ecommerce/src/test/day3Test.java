@@ -69,7 +69,7 @@ public class day3Test {
 		      } catch (Exception e) {
 		    	  e.printStackTrace();
 		      }
-    	c
+    	
     }
     @AfterTest
 	public void terminateBrowser() {

@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -35,7 +36,7 @@ public class day4Test {
 	}
 	
 	@Test
-	public void compareTest() {
+	public void compareTest() throws InterruptedException {
     	WebElement mobileTab=driver.findElement(By.xpath("//a[contains(text(),'Mobile')]"));
 		mobileTab.click();
 		WebElement xperiaCompare=driver.findElement(By.xpath("(//*[@class='link-compare'])[1]"));
@@ -49,8 +50,11 @@ public class day4Test {
 		for (String handle : driver.getWindowHandles()) {
 			driver.switchTo().window(handle);
 		   	}
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='top']/body/div[1]/div[1]/h1")));
+		WebElement header=driver.findElement(By.xpath("//*[@id='top']/body/div[1]/div[1]/h1"));
 		String strHead = ("COMPARE PRODUCTS");
-	    String compHead = driver.findElement(By.xpath("//*[@id='top']/body/div[1]/div[1]/h1")).getText();	
+	    String compHead = header.getText();	
 	    System.out.println("compHead = "+compHead);
 	    String popupMobile1 = driver.findElement(By.xpath("//h2/a[@title='IPhone']")).getText();  // text captured is "IPHONE" in uppercase
 	    String popupMobile2 = driver.findElement(By.xpath("//h2/a[@title='Sony Xperia']")).getText();  // text captured "SONY XPERIA" in uppercase

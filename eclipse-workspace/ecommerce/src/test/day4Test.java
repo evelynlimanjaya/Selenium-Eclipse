@@ -1,5 +1,7 @@
 package test;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -56,11 +58,40 @@ public class day4Test {
 		String strHead = ("COMPARE PRODUCTS");
 	    String compHead = header.getText();	
 	    System.out.println("compHead = "+compHead);
-	    String popupMobile1 = driver.findElement(By.xpath("//h2/a[@title='IPhone']")).getText();  // text captured is "IPHONE" in uppercase
-	    String popupMobile2 = driver.findElement(By.xpath("//h2/a[@title='Sony Xperia']")).getText();  // text captured "SONY XPERIA" in uppercase
+	    String popupMobile1 = driver.findElement(By.xpath("//h2/a[@title='Sony Xperia']")).getText();
+	    String popupMobile2 = driver.findElement(By.xpath("//h2/a[@title='IPhone']")).getText(); 
+	    String popupMobile3=driver.findElement(By.xpath("//h2/a[@title='Samsung Galaxy']")).getText(); 
 	    System.out.println("popupMobile1 = "+popupMobile1);
 	    System.out.println("popupMobile2 = "+popupMobile2);
-		
+	    System.out.println("popupMobile3 = "+popupMobile3);
+	    try {	    	
+	    	assertEquals(strHead, compHead);
+		    } catch (Exception e) {
+		    	e.printStackTrace();	    	
+		    }	
+	  
+	    try {	    	
+	    	assertEquals("SONY XPERIA", popupMobile1);
+		    } catch (Exception e) {
+		    	e.printStackTrace();	    	
+		    }	
+	
+	    try {	    	
+	    	assertEquals("IPHONE", popupMobile2);
+		    } catch (Exception e) {
+		    	e.printStackTrace();	    	
+		    }	
+	    
+	    try {	    	
+	    	assertEquals("SAMSUNG GALAXY", popupMobile3);
+		    } catch (Exception e) {
+		    	e.printStackTrace();	    	
+		    }
+	    driver.findElement(By.xpath("//button[@title='Close Window']")).click();
+	    for (String handle : driver.getWindowHandles()) {
+		    driver.switchTo().window(handle);
+		    }	 
+	    
 	}
 	
     @AfterTest

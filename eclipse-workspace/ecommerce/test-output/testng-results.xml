@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-24T22:28:31 PST" name="Default suite" finished-at="2020-11-24T22:28:50 PST" duration-ms="19250">
+  <suite started-at="2020-11-24T22:34:26 PST" name="Default suite" finished-at="2020-11-24T22:34:46 PST" duration-ms="20296">
     <groups>
     </groups>
-    <test started-at="2020-11-24T22:28:31 PST" name="Default test" finished-at="2020-11-24T22:28:50 PST" duration-ms="19250">
+    <test started-at="2020-11-24T22:34:26 PST" name="Default test" finished-at="2020-11-24T22:34:46 PST" duration-ms="20296">
       <class name="test.day4Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day4Test@2fd6b6c7]" started-at="2020-11-24T22:28:31 PST" name="launchBrowser" finished-at="2020-11-24T22:28:39 PST" duration-ms="7869" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day4Test@2fd6b6c7]" started-at="2020-11-24T22:34:26 PST" name="launchBrowser" finished-at="2020-11-24T22:34:34 PST" duration-ms="7911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="compareTest()[pri:0, instance:test.day4Test@2fd6b6c7]" started-at="2020-11-24T22:28:39 PST" name="compareTest" finished-at="2020-11-24T22:28:49 PST" duration-ms="9829" status="PASS">
+        <test-method signature="compareTest()[pri:0, instance:test.day4Test@2fd6b6c7]" started-at="2020-11-24T22:34:34 PST" name="compareTest" finished-at="2020-11-24T22:34:45 PST" duration-ms="11119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareTest -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:test.day4Test@2fd6b6c7]" started-at="2020-11-24T22:28:49 PST" name="terminateBrowser" finished-at="2020-11-24T22:28:50 PST" duration-ms="1504" status="PASS">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:test.day4Test@2fd6b6c7]" started-at="2020-11-24T22:34:45 PST" name="terminateBrowser" finished-at="2020-11-24T22:34:46 PST" duration-ms="1211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->

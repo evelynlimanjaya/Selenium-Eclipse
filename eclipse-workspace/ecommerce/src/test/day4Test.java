@@ -46,7 +46,16 @@ public class day4Test {
 		galaxyCompare.click();
 		WebElement compareBtn=driver.findElement(By.cssSelector("button[title='Compare']"));
 		compareBtn.click();
-		
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+		   	}
+		String strHead = ("COMPARE PRODUCTS");
+	    String compHead = driver.findElement(By.xpath("//*[@id='top']/body/div[1]/div[1]/h1")).getText();	
+	    System.out.println("compHead = "+compHead);
+	    String popupMobile1 = driver.findElement(By.xpath("//h2/a[@title='IPhone']")).getText();  // text captured is "IPHONE" in uppercase
+	    String popupMobile2 = driver.findElement(By.xpath("//h2/a[@title='Sony Xperia']")).getText();  // text captured "SONY XPERIA" in uppercase
+	    System.out.println("popupMobile1 = "+popupMobile1);
+	    System.out.println("popupMobile2 = "+popupMobile2);
 		
 	}
 	

@@ -16,6 +16,13 @@ import utility.constants;
 public class day5Test {
 	public WebDriver driver;
 	public WebDriverWait wait;
+	public String firstName = "Evelyn";
+	public String lastName="Limanjaya";
+	public String email="crimson.eve@gmail.com";
+	public String password ="bobamilktea";
+	public String confirmPass="bobamilktea";
+	
+	
 	
 	@BeforeTest
 	public void launchBrowser() {
@@ -37,5 +44,25 @@ public class day5Test {
 	public void createAccount() {
 		WebElement accountIcon=driver.findElement(By.cssSelector("[class='skip-link skip-account']"));
 		accountIcon.click();
+		WebElement myAccount=driver.findElement(By.cssSelector("[title='My Account']"));
+		myAccount.click();
+		WebElement createAccount=driver.findElement(By.cssSelector("[title='Create an Account']"));
+		createAccount.click();
+		WebElement firstNameField=driver.findElement(By.id("firstname"));
+		firstNameField.clear();
+		firstNameField.sendKeys(firstName);
+		WebElement lastNameField=driver.findElement(By.id("lastname"));
+		lastNameField.clear();
+		lastNameField.sendKeys(lastName);
+		WebElement emailField=driver.findElement(By.id("email_address"));
+		emailField.clear();
+		emailField.sendKeys(email);
+		WebElement passwordField=driver.findElement(By.id("password"));
+		passwordField.clear();
+		passwordField.sendKeys(password);
+		WebElement confirmField=driver.findElement(By.id("confirmation"));
+		confirmField.clear();
+		confirmField.sendKeys(confirmPass);
+		
 	}
 }

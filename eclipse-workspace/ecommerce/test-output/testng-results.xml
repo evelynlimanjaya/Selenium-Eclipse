@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-25T22:08:27 PST" name="Default suite" finished-at="2020-11-25T22:08:41 PST" duration-ms="13713">
+  <suite started-at="2020-11-25T22:40:09 PST" name="Default suite" finished-at="2020-11-25T22:40:27 PST" duration-ms="17657">
     <groups>
     </groups>
-    <test started-at="2020-11-25T22:08:27 PST" name="Default test" finished-at="2020-11-25T22:08:41 PST" duration-ms="13713">
+    <test started-at="2020-11-25T22:40:09 PST" name="Default test" finished-at="2020-11-25T22:40:27 PST" duration-ms="17657">
       <class name="test.day5Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day5Test@2805c96b]" started-at="2020-11-25T22:08:27 PST" name="launchBrowser" finished-at="2020-11-25T22:08:41 PST" duration-ms="13353" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day5Test@2805c96b]" started-at="2020-11-25T22:40:09 PST" name="launchBrowser" finished-at="2020-11-25T22:40:22 PST" duration-ms="12480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="createAccount()[pri:0, instance:test.day5Test@2805c96b]" started-at="2020-11-25T22:08:41 PST" name="createAccount" finished-at="2020-11-25T22:08:41 PST" duration-ms="284" status="PASS">
+        <test-method signature="createAccount()[pri:0, instance:test.day5Test@2805c96b]" started-at="2020-11-25T22:40:22 PST" name="createAccount" finished-at="2020-11-25T22:40:27 PST" duration-ms="5142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->

@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.internal.ProfilesIni"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.ProfilesIni"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxProfile"/>
@@ -32,11 +31,12 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="org.testng.AssertJUnit"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>

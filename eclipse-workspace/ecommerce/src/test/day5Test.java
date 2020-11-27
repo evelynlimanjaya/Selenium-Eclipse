@@ -63,6 +63,8 @@ public class day5Test {
 		WebElement confirmField=driver.findElement(By.id("confirmation"));
 		confirmField.clear();
 		confirmField.sendKeys(confirmPass);
+		WebElement registerBtn=driver.findElement(By.cssSelector("[type='submit']"));
+		registerBtn.click();
 		
 	}
 }

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-26T22:17:30 PST" name="Default suite" finished-at="2020-11-26T22:17:38 PST" duration-ms="8154">
+  <suite started-at="2020-11-26T22:21:46 PST" name="Default suite" finished-at="2020-11-26T22:21:54 PST" duration-ms="7841">
     <groups>
     </groups>
-    <test started-at="2020-11-26T22:17:30 PST" name="Default test" finished-at="2020-11-26T22:17:38 PST" duration-ms="8154">
+    <test started-at="2020-11-26T22:21:46 PST" name="Default test" finished-at="2020-11-26T22:21:54 PST" duration-ms="7841">
       <class name="test.day6Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day6Test@2805c96b]" started-at="2020-11-26T22:17:30 PST" name="launchBrowser" finished-at="2020-11-26T22:17:38 PST" duration-ms="7542" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day6Test@2805c96b]" started-at="2020-11-26T22:21:46 PST" name="launchBrowser" finished-at="2020-11-26T22:21:53 PST" duration-ms="7031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="placeOrder()[pri:0, instance:test.day6Test@2805c96b]" started-at="2020-11-26T22:17:38 PST" name="placeOrder" finished-at="2020-11-26T22:17:38 PST" duration-ms="572" status="PASS">
+        <test-method signature="placeOrder()[pri:0, instance:test.day6Test@2805c96b]" started-at="2020-11-26T22:21:53 PST" name="placeOrder" finished-at="2020-11-26T22:21:54 PST" duration-ms="766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->

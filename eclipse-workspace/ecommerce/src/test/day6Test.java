@@ -13,6 +13,9 @@ import utility.constants;
 public class day6Test {
 	private WebDriver driver;
 	private WebDriverWait wait;
+	private String email="crimson.eve@gmail.com";
+	private String password ="bobamilktea";
+	private String confirmPass="bobamilktea";
 	
 	  @BeforeTest
 	  public void launchBrowser() {
@@ -27,5 +30,12 @@ public class day6Test {
 			accountIcon.click();
 			WebElement myAccount=driver.findElement(By.cssSelector("[title='My Account']"));
 			myAccount.click();
+			WebElement emailLogin=driver.findElement(By.id("email"));
+			emailLogin.clear();
+			emailLogin.sendKeys(email);
+			WebElement passLogin=driver.findElement(By.id("pass"));
+			passLogin.clear();
+			passLogin.sendKeys(password);
+			
 	  }
 }

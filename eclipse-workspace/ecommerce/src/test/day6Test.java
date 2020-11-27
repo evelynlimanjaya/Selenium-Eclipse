@@ -38,6 +38,14 @@ public class day6Test {
 			passLogin.sendKeys(password);
 			WebElement loginBtn=driver.findElement(By.id("send2"));
 			loginBtn.click();
+			accountIcon.click();
+			WebElement wishlist=driver.findElement(By.xpath("//a[contains(text(),'My Wishlist')]"));
+			wishlist.click();
+			WebElement addToCart=driver.findElement(By.cssSelector("[title='Add to Cart']"));
+			addToCart.click();
+			WebElement checkout=driver.findElement(By.cssSelector("[title='Proceed to Checkout']"));
+			checkout.click();
+			
 			
 	  }
 }

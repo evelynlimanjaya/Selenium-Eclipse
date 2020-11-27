@@ -36,6 +36,8 @@ public class day6Test {
 			WebElement passLogin=driver.findElement(By.id("pass"));
 			passLogin.clear();
 			passLogin.sendKeys(password);
+			WebElement loginBtn=driver.findElement(By.id("send2"));
+			loginBtn.click();
 			
 	  }
 }

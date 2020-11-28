@@ -13,5 +13,7 @@ public class webElements {
 	By wishlist=By.xpath("//a[contains(text(),'My Wishlist')]");
 	By addToCart=By.cssSelector("[title='Add to Cart']");
 	By checkout=By.cssSelector("[title='Proceed to Checkout']");
-	
+	public webElements(WebDriver driver) {
+		this.driver=driver;
+	}
 }

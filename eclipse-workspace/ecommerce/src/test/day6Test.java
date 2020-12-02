@@ -16,7 +16,7 @@ public class day6Test {
 	private WebDriverWait wait;
 	private String email="crimson.eve@gmail.com";
 	private String password ="bobamilktea";
-	private String confirmPass="bobamilktea";
+
 	
 	  @BeforeTest
 	  public void launchBrowser() {

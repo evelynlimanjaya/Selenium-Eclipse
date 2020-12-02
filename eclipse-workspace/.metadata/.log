@@ -6598,3 +6598,11 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2020-12-01 18:48:56.080
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2020-12-01 21:40:31.562
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Eien\eclipse\java-2020-09\eclipse\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\ecommerce\bin C:\Users\Eien\client-combined-3.141.59.jar C:\Users\Eien\client-combined-3.141.59-sources.jar C:\Users\Eien\libs\byte-buddy-1.8.15.jar C:\Users\Eien\libs\commons-exec-1.3.jar C:\Users\Eien\libs\guava-25.0-jre.jar C:\Users\Eien\libs\okhttp-3.11.0.jar C:\Users\Eien\libs\okio-1.14.0.jar C:\Users\Eien\.p2\pool\plugins\org.testng_7.3.0.r202008060316.jar C:\Users\Eien\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\Eien\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Eien\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49461 -protocol json -d C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\ecommerce\test-output C:\Users\Eien\AppData\Local\Temp\testng-eclipse--1560153730\testng-customsuite.xml
+java -ea -classpath C:\Users\Eien\eclipse\java-2020-09\eclipse\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\ecommerce\bin:C:\Users\Eien\client-combined-3.141.59.jar:C:\Users\Eien\client-combined-3.141.59-sources.jar:C:\Users\Eien\libs\byte-buddy-1.8.15.jar:C:\Users\Eien\libs\commons-exec-1.3.jar:C:\Users\Eien\libs\guava-25.0-jre.jar:C:\Users\Eien\libs\okhttp-3.11.0.jar:C:\Users\Eien\libs\okio-1.14.0.jar:C:\Users\Eien\.p2\pool\plugins\org.testng_7.3.0.r202008060316.jar:C:\Users\Eien\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\Eien\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Eien\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar org.testng.remote.RemoteTestNG -serport 49461 -protocol json -d C:\Users\Eien\Selenium-Eclipse\eclipse-workspace\ecommerce\test-output C:\Users\Eien\AppData\Local\Temp\testng-eclipse--1560153730\testng-customsuite.xml

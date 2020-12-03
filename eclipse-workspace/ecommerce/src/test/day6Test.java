@@ -29,7 +29,7 @@ public class day6Test {
 	  public void placeOrder() {
 			WebElement accountIcon=driver.findElement(By.cssSelector("[class='skip-link skip-account']"));
 			accountIcon.click();
-			WebElement myAccount=driver.findElement(By.cssSelector("[title='My Account']"));
+			WebElement myAccount=driver.findEl sel	ement(By.cssSelector("[title='My Account']"));
 			myAccount.click();
 			WebElement emailLogin=driver.findElement(By.id("email"));
 			emailLogin.clear();

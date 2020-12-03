@@ -18,6 +18,8 @@ public class homepage {
 	WebElement emailLogin;
 	@FindBy(css="#pass")
 	WebElement passLogin;
+	@FindBy(css="#send2")
+	WebElement loginBtn;
 	
 	
 }

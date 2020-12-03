@@ -14,6 +14,8 @@ public class homepage {
 	WebElement accountIcon;
 	@FindBy(css="[title='My Account']")
 	WebElement myAccount;
+	@FindBy(css="#email")
+	WebElement emailLogin;
 	
 	
 }

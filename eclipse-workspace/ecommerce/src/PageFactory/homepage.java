@@ -20,6 +20,8 @@ public class homepage {
 	WebElement passLogin;
 	@FindBy(css="#send2")
 	WebElement loginBtn;
+	@FindBy(xpath="//a[contains(text(),'My Wishlist')]")
+	WebElement wishlist;
 	
 	
 }

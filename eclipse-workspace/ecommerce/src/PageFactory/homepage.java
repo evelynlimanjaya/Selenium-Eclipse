@@ -22,6 +22,8 @@ public class homepage {
 	WebElement loginBtn;
 	@FindBy(xpath="//a[contains(text(),'My Wishlist')]")
 	WebElement wishlist;
+	@FindBy(css="[title='Add to Cart']")
+	WebElement addToCart;
 	
 	
 }

@@ -24,6 +24,7 @@ public class homepage {
 	WebElement wishlist;
 	@FindBy(css="[title='Add to Cart']")
 	WebElement addToCart;
-	
+	@FindBy(css="[title='Proceed to Checkout']")
+	WebElement checkout;
 	
 }

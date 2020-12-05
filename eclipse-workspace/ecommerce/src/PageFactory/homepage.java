@@ -33,7 +33,8 @@ public class homepage {
 	}
 	
 	public void accessMyAccount() {
-		
+		accountIcon.click();
+		myAccount.click();
 	}
 	
 }

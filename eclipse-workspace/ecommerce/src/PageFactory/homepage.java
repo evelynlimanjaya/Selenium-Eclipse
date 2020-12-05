@@ -27,8 +27,13 @@ public class homepage {
 	@FindBy(css="[title='Proceed to Checkout']")
 	WebElement checkout;
 	
-	public guru99Page(WebDriver driver) {
+	public homepage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	public void accessMyAccount() {
+		
+	}
+	
 }

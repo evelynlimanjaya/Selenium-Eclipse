@@ -37,4 +37,17 @@ public class homepage {
 		myAccount.click();
 	}
 	
+	public void loginTest() {
+		emailLogin.clear();
+		emailLogin.sendKeys("crimson.eve@gmail.com");
+		passLogin.clear();
+		passLogin.sendKeys("bobamilktea");
+		loginBtn.click();
+	}
+	
+	public void wishlistTest() {
+		accountIcon.click();
+		wishlist.click();
+	}
+	
 }

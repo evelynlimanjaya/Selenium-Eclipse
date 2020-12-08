@@ -51,5 +51,6 @@ public class day6Test {
 			
 			objHomePage=new homepage(driver);
 			objHomePage.accessMyAccountTest();
+			objHomePage.loginTest();
 	  }
 }

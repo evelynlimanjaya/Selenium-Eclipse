@@ -32,7 +32,7 @@ public class homepage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void accessMyAccount() {
+	public void accessMyAccountTest() {
 		accountIcon.click();
 		myAccount.click();
 	}
@@ -45,9 +45,11 @@ public class homepage {
 		loginBtn.click();
 	}
 	
-	public void wishlistTest() {
+	public void addToCartTest() {
 		accountIcon.click();
 		wishlist.click();
+		addToCart.click();
+		checkout.click();
 	}
 	
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObject.webElements;
@@ -54,4 +55,9 @@ public class day6Test {
 			objHomePage.loginTest();
 			objHomePage.addToCartTest();
 	  }
+	  
+	  @AfterTest
+		public void terminateBrowser() {
+			driver.quit();
+		}
 }

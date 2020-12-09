@@ -40,4 +40,5 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="pageObject.webElements"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="PageFactory.homepage"/>
 </qualifiedTypeNameHistroy>

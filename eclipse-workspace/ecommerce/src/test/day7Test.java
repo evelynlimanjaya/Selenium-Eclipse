@@ -25,6 +25,9 @@ public class day7Test {
 	  }
 	
   @Test
-  public void f() {
+  public void saveOrderTest() {
+		objHomePage.accessMyAccountTest();
+		objHomePage.loginTest();
+		
   }
 }

@@ -26,6 +26,8 @@ public class homepage {
 	WebElement addToCart;
 	@FindBy(css="[title='Proceed to Checkout']")
 	WebElement checkout;
+	@FindBy(css="[class='level0 nav-1 first']")
+	WebElement mobileMenu;
 	
 	public homepage(WebDriver driver) {
 		this.driver=driver;

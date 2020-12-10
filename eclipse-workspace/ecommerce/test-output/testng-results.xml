@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-07T20:34:04 PST" name="Default suite" finished-at="2020-12-07T20:34:14 PST" duration-ms="9926">
+  <suite started-at="2020-12-09T21:38:43 PST" name="Default suite" finished-at="2020-12-09T21:38:51 PST" duration-ms="8135">
     <groups>
     </groups>
-    <test started-at="2020-12-07T20:34:04 PST" name="Default test" finished-at="2020-12-07T20:34:14 PST" duration-ms="9926">
-      <class name="test.day6Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day6Test@2805c96b]" started-at="2020-12-07T20:34:04 PST" name="launchBrowser" finished-at="2020-12-07T20:34:11 PST" duration-ms="6618" status="PASS">
+    <test started-at="2020-12-09T21:38:43 PST" name="Default test" finished-at="2020-12-09T21:38:51 PST" duration-ms="8135">
+      <class name="test.day9Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day9Test@2805c96b]" started-at="2020-12-09T21:38:43 PST" name="launchBrowser" finished-at="2020-12-09T21:38:50 PST" duration-ms="7079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="placeOrder()[pri:0, instance:test.day6Test@2805c96b]" started-at="2020-12-07T20:34:11 PST" name="placeOrder" finished-at="2020-12-07T20:34:14 PST" duration-ms="3247" status="PASS">
+        <test-method signature="couponTest()[pri:0, instance:test.day9Test@2805c96b]" started-at="2020-12-09T21:38:50 PST" name="couponTest" finished-at="2020-12-09T21:38:51 PST" duration-ms="1002" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- placeOrder -->
-      </class> <!-- test.day6Test -->
+        </test-method> <!-- couponTest -->
+      </class> <!-- test.day9Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

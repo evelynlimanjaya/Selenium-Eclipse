@@ -54,6 +54,8 @@ public class homepage {
 		checkout.click();
 	}
 	
-	
+	public void accessMobileMenu() {
+		mobileMenu.click();
+	}
 	
 }

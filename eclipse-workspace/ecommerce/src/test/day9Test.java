@@ -26,5 +26,10 @@ public class day9Test {
 	
     @Test
     public void couponTest() {
+    	objHomePage=new homepage(driver);
+    	objHomePage.accessMobileMenu();
+    	
+    	
+    	
     }
 }

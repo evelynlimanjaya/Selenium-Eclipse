@@ -23,7 +23,8 @@ public class day9Test {
 		  driver.get(constants.URL);
 		  driver.manage().window().maximize();
 	  }
-  @Test
-  public void f() {
-  }
+	
+    @Test
+    public void couponTest() {
+    }
 }

@@ -33,6 +33,8 @@ public class day9Test {
     	objHomePage.accessMobileMenu();
     	WebElement iPhoneCart=driver.findElement(By.xpath("(//*[@title='Add to Cart'])[2]"));
     	iPhoneCart.click();
+    	WebElement discountInput=driver.findElement(By.cssSelector("#coupon_code"));
+    	discountInput.sendKeys(couponCode);
     	
     	
     	

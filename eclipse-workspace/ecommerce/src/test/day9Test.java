@@ -1,5 +1,7 @@
 package test;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,7 +39,12 @@ public class day9Test {
     	discountInput.sendKeys(couponCode);
     	WebElement applyBtn=driver.findElement(By.cssSelector("[title='Apply']"));
     	applyBtn.click();
-    	
+    	try {
+			 assertEquals(emptyMsg, "You have no items in your shopping cart.\n"
+			 		+ "Click here to continue shopping."); 
+		      } catch (Exception e) {
+		    	  e.printStackTrace();
+		      }
     	
     	
     }

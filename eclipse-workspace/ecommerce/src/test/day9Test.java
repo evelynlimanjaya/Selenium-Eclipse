@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -41,18 +43,21 @@ public class day9Test {
     	applyBtn.click();
     	String oriPrice=driver.findElement(By.xpath("(//*[@class='a-right'])[4]")).getText().replace("$", "");
     	double oriPriceNum=Double.parseDouble(oriPrice);
-    	
-    	double discountPrice=oriPriceNum*0.5;
+    	double discountPrice=oriPriceNum*0.05;
     	String discountPriceStr=Double.toString(discountPrice);
-    	System.out.print(discountPriceStr);
-//    	("(//*[@class='a-right'])[6]")
-//    	try {
-//			 assertEquals(emptyMsg, "You have no items in your shopping cart.\n"
-//			 		+ "Click here to continue shopping."); 
-//		      } catch (Exception e) {
-//		    	  e.printStackTrace();
-//		      }
-//    	
+    	String actualDiscount=driver.findElement(By.xpath("(//*[@class='a-right'])[6]")).getText();
+    	
+    	try {
+			 Assert.assertTrue(actualDiscount.contains(discountPriceStr)); 
+		      } catch (Exception e) {
+		    	  e.printStackTrace();
+		      }
+    	
     	
     }
+    
+    @AfterTest
+	public void terminateBrowser() {
+		driver.quit();
+	}
 }

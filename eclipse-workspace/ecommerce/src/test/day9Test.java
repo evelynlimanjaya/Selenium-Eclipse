@@ -39,13 +39,20 @@ public class day9Test {
     	discountInput.sendKeys(couponCode);
     	WebElement applyBtn=driver.findElement(By.cssSelector("[title='Apply']"));
     	applyBtn.click();
-    	try {
-			 assertEquals(emptyMsg, "You have no items in your shopping cart.\n"
-			 		+ "Click here to continue shopping."); 
-		      } catch (Exception e) {
-		    	  e.printStackTrace();
-		      }
+    	String oriPrice=driver.findElement(By.xpath("(//*[@class='a-right'])[4]")).getText().replace("$", "");
+    	double oriPriceNum=Double.parseDouble(oriPrice);
     	
+    	double discountPrice=oriPriceNum*0.5;
+    	String discountPriceStr=Double.toString(discountPrice);
+    	System.out.print(discountPriceStr);
+//    	("(//*[@class='a-right'])[6]")
+//    	try {
+//			 assertEquals(emptyMsg, "You have no items in your shopping cart.\n"
+//			 		+ "Click here to continue shopping."); 
+//		      } catch (Exception e) {
+//		    	  e.printStackTrace();
+//		      }
+//    	
     	
     }
 }

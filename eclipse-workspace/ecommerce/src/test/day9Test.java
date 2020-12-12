@@ -35,6 +35,8 @@ public class day9Test {
     	iPhoneCart.click();
     	WebElement discountInput=driver.findElement(By.cssSelector("#coupon_code"));
     	discountInput.sendKeys(couponCode);
+    	WebElement applyBtn=driver.findElement(By.cssSelector("[title='Apply']"));
+    	applyBtn.click();
     	
     	
     	

@@ -9,11 +9,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
+import PageFactory.backendPage;
 import utility.constants;
 
 public class day10Test {
-	public WebDriver driver;
-	public WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
+	
+	backendPage objBackendPage;
+
 	
 	@BeforeTest
 	public void launchBrowser() {
@@ -30,7 +35,10 @@ public class day10Test {
 	
 	
 	}
-  @Test
-  public void f() {
-  }
+	
+    @Test
+    public void exportOrdersTest() {
+    	objBackendPage=new backendPage(driver);
+    	objBackendPage.login();
+    }
 }

@@ -41,7 +41,8 @@ public class day10Test {
     public void exportOrdersTest() {
     	objBackendPage=new backendPage(driver);
     	objBackendPage.login();
+    	wait=new WebDriverWait(driver,5);
     	wait.until(ExpectedConditions.alertIsPresent());
-    	driver.switchTo().alert().dismiss();
+    	
     }
 }

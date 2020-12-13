@@ -27,5 +27,6 @@ public class backendPage {
 		usernameInput.sendKeys(backendID);
 		passInput.sendKeys(backendPass);
 		loginBtn.click();
+		driver.switchTo().alert().dismiss();
 	}
 }

@@ -2,47 +2,25 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-13T12:50:03 PST" name="Default suite" finished-at="2020-12-13T12:50:13 PST" duration-ms="10230">
+  <suite started-at="2020-12-13T12:53:27 PST" name="Default suite" finished-at="2020-12-13T12:53:41 PST" duration-ms="13274">
     <groups>
     </groups>
-    <test started-at="2020-12-13T12:50:03 PST" name="Default test" finished-at="2020-12-13T12:50:13 PST" duration-ms="10230">
+    <test started-at="2020-12-13T12:53:27 PST" name="Default test" finished-at="2020-12-13T12:53:41 PST" duration-ms="13274">
       <class name="test.day10Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day10Test@2805c96b]" started-at="2020-12-13T12:50:03 PST" name="launchBrowser" finished-at="2020-12-13T12:50:12 PST" duration-ms="8376" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.day10Test@2805c96b]" started-at="2020-12-13T12:53:27 PST" name="launchBrowser" finished-at="2020-12-13T12:53:33 PST" duration-ms="5785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="exportOrdersTest()[pri:0, instance:test.day10Test@2805c96b]" started-at="2020-12-13T12:50:12 PST" name="exportOrdersTest" finished-at="2020-12-13T12:50:13 PST" duration-ms="1772" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
+        <test-method signature="exportOrdersTest()[pri:0, instance:test.day10Test@2805c96b]" started-at="2020-12-13T12:53:33 PST" name="exportOrdersTest" finished-at="2020-12-13T12:53:41 PST" duration-ms="7430" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-SHNH7OFQ', ip: '192.168.68.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15172, moz:profile: C:\Users\Eien\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9236898d-3c9e-4522-8e22-02a9a8cf00b3]]>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-SHNH7OFQ', ip: '192.168.68.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15172, moz:profile: C:\Users\Eien\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9236898d-3c9e-4522-8e22-02a9a8cf00b3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
-at PageFactory.backendPage.login(backendPage.java:30)
-at test.day10Test.exportOrdersTest(day10Test.java:42)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at test.day10Test.exportOrdersTest(day10Test.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,9 +49,32 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-SHNH7OFQ', ip: '192.168.68.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 8472, moz:profile: C:\Users\Eien\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 35b82dc1-a5f6-4e28-baa7-049c1ca56c86
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
+at org.openqa.selenium.support.ui.ExpectedConditions$28.apply(ExpectedConditions.java:806)
+at org.openqa.selenium.support.ui.ExpectedConditions$28.apply(ExpectedConditions.java:802)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportOrdersTest -->

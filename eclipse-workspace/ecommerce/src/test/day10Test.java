@@ -5,6 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -40,5 +41,7 @@ public class day10Test {
     public void exportOrdersTest() {
     	objBackendPage=new backendPage(driver);
     	objBackendPage.login();
+    	wait.until(ExpectedConditions.alertIsPresent());
+    	driver.switchTo().alert().dismiss();
     }
 }

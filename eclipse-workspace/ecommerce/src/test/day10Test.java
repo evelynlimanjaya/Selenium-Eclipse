@@ -25,7 +25,7 @@ public class day10Test {
 		driver =  new FirefoxDriver(opt);
 		wait=new WebDriverWait(driver,5);
 		
-		driver.get(constants.URL);
+		driver.get(constants.backendLoginURL);
 		driver.manage().window().maximize();
 	
 	

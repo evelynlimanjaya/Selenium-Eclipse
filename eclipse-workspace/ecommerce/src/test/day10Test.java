@@ -43,6 +43,7 @@ public class day10Test {
     	objBackendPage.login();
     	wait=new WebDriverWait(driver,5);
     	wait.until(ExpectedConditions.alertIsPresent());
+    	driver.switchTo().alert().dismiss();
     	
     }
 }

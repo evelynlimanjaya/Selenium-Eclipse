@@ -38,11 +38,10 @@ public class day10Test {
 	}
 	
     @Test
-    public void exportOrdersTest() {
+    public void exportOrdersTest() throws InterruptedException {
     	objBackendPage=new backendPage(driver);
     	objBackendPage.login();
-    	wait=new WebDriverWait(driver,5);
-    	wait.until(ExpectedConditions.alertIsPresent());
+    	Thread.sleep(5000);
     	driver.switchTo().alert().dismiss();
     	
     }

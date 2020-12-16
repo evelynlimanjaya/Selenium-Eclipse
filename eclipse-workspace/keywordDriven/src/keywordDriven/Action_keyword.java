@@ -1,6 +1,7 @@
 package keywordDriven;
 import java.util.concurrent.TimeUnit; 
-import org.openqa.selenium.By; 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utility.Constants; 
@@ -19,23 +20,23 @@ public class Action_keyword {
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
  
 	} 
-	public void enterEmail() 
+	public void input() 
 	{ 
-	driver.findElement(By.xpath("//input[@id='user_email_login']")).sendKeys(Constants.username);
+	driver.findElement(By.cssSelector("input[name='q']")).sendKeys(Constants.searchInput);
 	} 
-	public void enterPassword() 
+	public void clickEnter() 
 	{ 
-	driver.findElement(By.xpath("//input[@id='user_password']")).sendKeys(Constants.password); 
+	driver.findElement(By.cssSelector("input[name='q']")).sendKeys(Keys.ENTER); 
 	} 
-	public void clickSignIn() 
+	public void checkResult() 
 	{ 
-	driver.findElement(By.xpath("//form[@id='signin_signup_form']//input[@id='user_submit']")).click(); 
+	String resultText=driver.findElement(By.cssSelector("#res")).getText(); 
+	try {
+		 resultText.contains(Constants.searchResult); 
+	      } catch (Exception e) {
+	    	  e.printStackTrace();
+	      }
 	}
-
-	public void logout() 
-	{ 
-	driver.findElement(By.xpath("//a[@id='sign_out_link']")).click(); 
-	} 
 	public void closeBrowser() 
 	{ 
 	driver.quit(); 

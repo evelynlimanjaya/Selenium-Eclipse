@@ -61,7 +61,7 @@ public class day6TestNG {
 		readGuru99Excel file=new readGuru99Excel();
 		
 		Sheet guru99Sheet = file.readExcel(System.getProperty("user.dir"),"guru99Excel.xlsx" , "Sheet1");
-//		int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
+
 		for(int i=1;i<5;i++) {
 
 			WebElement UserID=driver.findElement(By.cssSelector("[name='uid']"));
@@ -78,12 +78,7 @@ public class day6TestNG {
 		       	Alert alt = driver.switchTo().alert();
 				actualBoxTitle = alt.getText(); // get content of the Alert Message
 				alt.accept();
-//				if (actualBoxTitle.contains("User or Password is not valid")) { // Compare Error Text with Expected Error Value
-//				    System.out.println("Test case: Passed"); 
-//				} 
-//				else {
-//				    System.out.println("Test case: Failed");
-//				}
+
 				assertEquals(actualBoxTitle,"User or Password is not valid");
 			}
 			    
@@ -94,14 +89,8 @@ public class day6TestNG {
 				String[] textPart=welcomeText.split(":");
 				String usernameText=textPart[1];
 
-				// On Successful login compare Actual Welcome Message with Expected Welcome Message		
-//				if(usernameText.equals(" mngr293142")) {
-//					System.out.println("Test Case: Passed");
-//				}
-//				else {
-//					System.out.println("Test Case: Failed");
-//				}
-				assertTrue(usernameText.equals(" mngr293142"));
+
+				assertTrue(usernameText.equals(" mngr300111"));
 				// Code to take Screenshot
 				File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 				// Code to save screenshot at desired location

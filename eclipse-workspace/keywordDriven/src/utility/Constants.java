@@ -1,10 +1,8 @@
 package utility;
 
 public class Constants {
-	public static final String URL = "https://www.browserstack.com/users/sign_in/"; 
+	public static final String URL = "https://www.google.com"; 
 	//Mention the path to your excel file
-	public static final String filePath = "C:\\Users\\Eien\\Selenium-Eclipse\\eclipse-workspace\\keywordDriven\\src\\excelData\\DemoFile.xlsx"; 
-	public static final String excelData = "DemoFile.xlsx"; 
-	public static final String username = "crimson.eve@gmail.com"; 
-	public static final String password = "password"; 
+	public static final String searchInput = "Odin Sphere"; 
+	public static final String searchResult = "Odin Sphere"; 
 }

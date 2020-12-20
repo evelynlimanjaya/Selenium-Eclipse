@@ -42,7 +42,11 @@ public class day10Test {
     	objBackendPage=new backendPage(driver);
     	objBackendPage.login();
     	Thread.sleep(5000);
-    	driver.switchTo().alert().dismiss();
+    	try {Thread.sleep(5000);}catch(Exception e){};
+		
+		for (String handle : driver.getWindowHandles()) {                                             
+	    	driver.switchTo().window(handle);
+	    	} 	 
     	
     }
 }

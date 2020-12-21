@@ -1,5 +1,6 @@
 package test;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -41,12 +42,8 @@ public class day10Test {
     public void exportOrdersTest() throws InterruptedException {
     	objBackendPage=new backendPage(driver);
     	objBackendPage.login();
-    	Thread.sleep(5000);
-    	try {Thread.sleep(5000);}catch(Exception e){};
-		
-		for (String handle : driver.getWindowHandles()) {                                             
-	    	driver.switchTo().window(handle);
-	    	} 	 
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'close')]")));
+    	driver.findElement(By.xpath("//span[contains(text(),'close')]")).click();
     	
     }
 }

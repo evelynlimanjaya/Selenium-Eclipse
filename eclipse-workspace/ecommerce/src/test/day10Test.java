@@ -2,10 +2,12 @@ package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
@@ -18,6 +20,7 @@ import utility.constants;
 public class day10Test {
 	private WebDriver driver;
 	private WebDriverWait wait;
+
 	
 	backendPage objBackendPage;
 
@@ -40,10 +43,12 @@ public class day10Test {
 	
     @Test
     public void exportOrdersTest() throws InterruptedException {
+    	Actions actions=new Actions(driver);
     	objBackendPage=new backendPage(driver);
     	objBackendPage.login();
     	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'close')]")));
     	driver.findElement(By.xpath("//span[contains(text(),'close')]")).click();
-    	
+    	WebElement salesTab=driver.findElement( By.xpath("//span[contains(text(),'Sales')]"));
+    	actions.moveToElement(salesTab);
     }
 }

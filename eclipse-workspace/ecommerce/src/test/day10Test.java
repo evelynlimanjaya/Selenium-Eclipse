@@ -56,5 +56,8 @@ public class day10Test {
     	
     	Select exportType=new Select(driver.findElement(By.cssSelector("#sales_order_grid_export")));
     	exportType.selectByVisibleText("CSV");
+    	
+    	WebElement exportBtn=driver.findElement(By.xpath("//span[contains(text(),'Export')]"));
+    	exportBtn.click();
     }
 }

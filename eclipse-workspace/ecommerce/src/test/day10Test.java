@@ -48,9 +48,9 @@ public class day10Test {
     	objBackendPage.login();
     	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'close')]")));
     	driver.findElement(By.xpath("//span[contains(text(),'close')]")).click();
-    	WebElement salesTab=driver.findElement( By.xpath("//span[contains(text(),'Sales')]"));
+    	WebElement salesTab=driver.findElement(By.linkText("Sales"));
     	actions.moveToElement(salesTab).perform();
-    	WebElement ordersMenu=driver.findElement(By.xpath("//span[contains(text(),'Orders')]"));
+    	WebElement ordersMenu=driver.findElement(By.linkText("Orders"));
     	ordersMenu.click();
     }
 }

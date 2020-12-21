@@ -49,6 +49,8 @@ public class day10Test {
     	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'close')]")));
     	driver.findElement(By.xpath("//span[contains(text(),'close')]")).click();
     	WebElement salesTab=driver.findElement( By.xpath("//span[contains(text(),'Sales')]"));
-    	actions.moveToElement(salesTab);
+    	actions.moveToElement(salesTab).perform();
+    	WebElement ordersMenu=driver.findElement(By.xpath("//span[contains(text(),'Orders')]"));
+    	ordersMenu.click();
     }
 }

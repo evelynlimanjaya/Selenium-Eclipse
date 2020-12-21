@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.Select;
 
 
 import PageFactory.backendPage;
@@ -52,5 +53,8 @@ public class day10Test {
     	actions.moveToElement(salesTab).perform();
     	WebElement ordersMenu=driver.findElement(By.linkText("Orders"));
     	ordersMenu.click();
+    	
+    	Select exportType=new Select(driver.findElement(By.cssSelector("#sales_order_grid_export")));
+    	exportType.selectByVisibleText("CSV");
     }
 }

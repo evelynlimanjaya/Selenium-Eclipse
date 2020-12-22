@@ -1,5 +1,7 @@
 package test;
 
+import javax.mail.MessagingException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.Select;
+import utility.emailUtil;
 
 
 import PageFactory.backendPage;
@@ -59,5 +62,17 @@ public class day10Test {
     	
     	WebElement exportBtn=driver.findElement(By.xpath("//span[contains(text(),'Export')]"));
     	exportBtn.click();
+    	
+    	String filePath = System.getProperty("user.home")+"/Downloads/orders.csv";
+		try {
+			emailUtil.EmailUtil(filePath);
+			//Mail.mail(filePath);
+		} catch (MessagingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 }

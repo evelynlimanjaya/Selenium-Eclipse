@@ -14,14 +14,14 @@ public class emailUtil {
       
       private static final String emailMsgTxt      = "Orders List in CSV formatted file";
       private static final String emailSubjectTxt  = "Orders List in CSV formatted file";
-      private static final String emailFromAddress = "userid@gmail.com";
+      private static final String emailFromAddress = "crimson.eve@gmail.com";
 
       // Add List of Email address to who email needs to be sent to
-      private static final String[] emailList = {"supportw11@axyz.com", "BMX97M@tpg.com"};
+      private static final String[] emailList = {"crimson.eve@gmail.com"};
       private static String sFilename = null;
       
 	 
- public static void emailUtil(String vFilename) throws MessagingException
+ public static void EmailUtil(String vFilename) throws MessagingException
       {
 
       // 6. Attach this exported file and email to another email id

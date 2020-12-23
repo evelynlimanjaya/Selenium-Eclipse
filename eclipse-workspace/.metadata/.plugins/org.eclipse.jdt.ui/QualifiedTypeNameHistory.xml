@@ -46,4 +46,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+    <fullyQualifiedTypeName name="utility.emailUtil"/>
+    <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
 </qualifiedTypeNameHistroy>

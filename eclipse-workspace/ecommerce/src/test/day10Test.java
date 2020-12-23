@@ -64,15 +64,6 @@ public class day10Test {
     	exportBtn.click();
     	
     	String filePath = System.getProperty("user.home")+"/Downloads/orders.csv";
-		try {
-			emailUtil.EmailUtil(filePath);
-			//Mail.mail(filePath);
-		} catch (MessagingException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
     }
 }

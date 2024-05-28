@@ -1,2 +1,2 @@
 # Selenium-Eclipse
-Practice Selenium with Eclipse IDE using Java
+Practice Selenium website automation test - Eclipse IDE - Java
